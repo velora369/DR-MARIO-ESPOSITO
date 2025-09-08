@@ -102,9 +102,11 @@ const Footer = () => {
                   href={whatsappLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-vibrant-turquoise text-sm bg-[#2b2c3700] text-[#59bfcd]"
+                  className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm"
                   data-testid="link-footer-whatsapp"
-                >WhatsApp</a>
+                >
+                  WhatsApp
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <FaInstagram className="w-4 h-4 text-vibrant-turquoise" />
