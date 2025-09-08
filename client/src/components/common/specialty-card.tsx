@@ -31,7 +31,7 @@ const SpecialtyCard = ({
         </p>
         <Button 
           variant="ghost" 
-          className="text-primary hover:text-vibrant-turquoise font-semibold p-0 transition-all duration-300"
+          className="text-primary hover:text-vibrant-turquoise font-semibold p-0 transition-all duration-300 hover:underline hover:shadow-none focus:shadow-none"
           onClick={onLearnMore}
           data-testid={`button-learn-more-${title.toLowerCase().replace(/\s+/g, '-')}`}
         >
