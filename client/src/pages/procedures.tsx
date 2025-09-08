@@ -16,7 +16,7 @@ const Procedures = () => {
     return proceduresData.filter((procedure) => {
       const matchesSearch = procedure.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            procedure.description.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesCategory = !selectedCategory || procedure.category === selectedCategory;
+      const matchesCategory = !selectedCategory || selectedCategory === "todas" || procedure.category === selectedCategory;
       
       return matchesSearch && matchesCategory;
     });
@@ -63,7 +63,7 @@ const Procedures = () => {
                   <SelectValue placeholder="Todas as especialidades" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todas as especialidades</SelectItem>
+                  <SelectItem value="todas">Todas as especialidades</SelectItem>
                   <SelectItem value="otorrino">Otorrinolaringologia</SelectItem>
                   <SelectItem value="cirurgia">Cirurgia Plástica Facial</SelectItem>
                   <SelectItem value="estetica">Medicina Estética</SelectItem>
