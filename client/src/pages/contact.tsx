@@ -19,8 +19,8 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const whatsappLink = "https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
-  const whatsappScheduleLink = "https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito.%20Poderia%20me%20informar%20os%20horários%20disponíveis?";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
+  const whatsappScheduleLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito.%20Poderia%20me%20informar%20os%20horários%20disponíveis?";
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -114,7 +114,7 @@ const Contact = () => {
                         className="text-green-600 hover:text-green-700 font-medium"
                         data-testid="link-whatsapp"
                       >
-                        (65) 99999-9999
+                        (65) 99624-3541
                       </a>
                     </div>
                   </div>
@@ -138,9 +138,11 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-dark-teal">Endereço</h3>
                       <p className="text-muted-foreground">
-                        Rua das Flores, 123<br />
-                        Centro, Cuiabá - MT<br />
-                        CEP: 78000-000
+                        <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                          Rua das Flores, 123<br />
+                          Centro, Cuiabá - MT<br />
+                          CEP: 78000-000
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -332,12 +334,17 @@ const Contact = () => {
             </h2>
             <Card className="shadow-lg">
               <CardContent className="p-4">
-                <div className="w-full h-96 bg-gray-200 rounded-xl flex items-center justify-center" data-testid="map-placeholder">
-                  <div className="text-center">
-                    <MapPin className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
-                    <p className="text-lg font-medium text-dark-teal">Mapa Interativo</p>
-                    <p className="text-muted-foreground">Rua das Flores, 123 - Centro, Cuiabá - MT</p>
-                  </div>
+                <div className="w-full h-96 rounded-xl overflow-hidden" data-testid="map-interactive">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.8282!2d-56.09456!3d-15.60181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939a0eb64e7f8d77%3A0x123456789abcdef!2sRua%20das%20Flores%2C%20123%20-%20Centro%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1sen!2sbr!4v1625680000000!5m2!1sen!2sbr"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Localização do Consultório Dr. Mário Espósito"
+                  ></iframe>
                 </div>
               </CardContent>
             </Card>

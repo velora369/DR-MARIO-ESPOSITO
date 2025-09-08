@@ -17,7 +17,7 @@ interface ProcedureModalProps {
 const ProcedureModal = ({ procedure, isOpen, onClose }: ProcedureModalProps) => {
   if (!procedure) return null;
 
-  const whatsappLink = `https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20${encodeURIComponent(procedure.name)}%20e%20agendar%20uma%20consulta`;
+  const whatsappLink = `https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20${encodeURIComponent(procedure.name)}%20e%20agendar%20uma%20consulta`;
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>

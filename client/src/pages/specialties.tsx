@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Specialties = () => {
-  const whatsappLink = "https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20especialidades%20do%20Dr.%20Mário%20Espósito";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20especialidades%20do%20Dr.%20Mário%20Espósito";
 
   const specialties = [
     {

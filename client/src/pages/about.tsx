@@ -3,7 +3,7 @@ import { MessageCircle, GraduationCap, Hospital, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
-  const whatsappLink = "https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
 
   const academicFormation = [
     "Mestre em Otorrinolaringologia pela UFRJ-RJ",

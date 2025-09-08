@@ -22,7 +22,7 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const whatsappLink = "https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
   
   const featuredProcedures = proceduresData.filter(p => 
     ['rinoplastia', 'botox', 'ronco'].includes(p.id)
