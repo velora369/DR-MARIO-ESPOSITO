@@ -117,7 +117,7 @@ const Contact = () => {
                             className="text-green-600 hover:text-green-700 font-semibold text-lg transition-colors"
                             data-testid="link-whatsapp"
                           >
-                            (65) 99624-3541
+                            WhatsApp
                           </a>
                           <p className="text-muted-foreground text-sm mt-1">
                             Atendimento rápido e direto
@@ -143,7 +143,7 @@ const Contact = () => {
                             className="text-purple-600 hover:text-purple-700 font-semibold text-lg transition-colors"
                             data-testid="link-instagram"
                           >
-                            @dr_marioesposito
+                            Instagram
                           </a>
                           <p className="text-muted-foreground text-sm mt-1">
                             Dicas e informações sobre saúde
