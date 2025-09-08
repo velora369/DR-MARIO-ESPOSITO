@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -69,7 +69,7 @@ const Header = () => {
                       {item.name}
                     </Link>
                   ))}
-                  <div className="border-t border-border pt-4 mt-6">
+                  <div className="border-t border-border pt-4 mt-6 space-y-3">
                     <a
                       href={whatsappLink}
                       target="_blank"
@@ -79,6 +79,16 @@ const Header = () => {
                     >
                       <FaWhatsapp className="w-4 h-4 mr-2" />
                       WhatsApp
+                    </a>
+                    <a
+                      href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-3 rounded-lg font-medium flex items-center justify-center w-full hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
+                      data-testid="link-menu-instagram"
+                    >
+                      <FaInstagram className="w-4 h-4 mr-2" />
+                      Instagram
                     </a>
                   </div>
                 </div>
