@@ -1,4 +1,4 @@
-import { MessageCircle, Stethoscope, UserCheck, Sparkles, Wind, Check } from "lucide-react";
+import { MessageCircle, Stethoscope, Syringe, Sparkles, Wind, Check } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -24,7 +24,7 @@ const Specialties = () => {
     {
       id: 'cirurgia',
       title: 'Cirurgia Plástica Facial',
-      icon: <UserCheck className="text-2xl text-white" />,
+      icon: <Syringe className="text-2xl text-white" />,
       bgColor: 'bg-soft-blue-green',
       description: 'Procedimentos cirúrgicos estéticos e funcionais para harmonização facial, sempre priorizando resultados naturais e a funcionalidade respiratória quando aplicável.',
       procedures: [
