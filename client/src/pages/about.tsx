@@ -104,17 +104,17 @@ const About = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center"
+                  className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center min-h-[60px] flex-1"
                   data-testid="button-whatsapp"
                 >
                   <FaWhatsapp className="mr-3 h-5 w-5" />
                   Agende sua consulta
                 </a>
-                <Link href="/especialidades">
+                <Link href="/especialidades" className="flex-1">
                   <Button 
                     variant="secondary"
                     size="lg"
-                    className="px-8 py-4 rounded-xl font-semibold text-lg"
+                    className="px-8 py-4 rounded-xl font-semibold text-lg w-full min-h-[60px] flex items-center justify-center"
                     data-testid="button-specialties"
                   >
                     Ver especialidades
