@@ -20,14 +20,12 @@ const SpecialtyCard = ({
   testId 
 }: SpecialtyCardProps) => {
   return (
-    <Card className="specialty-card bg-card shadow-lg text-center h-full transition-all duration-300 hover:scale-105 hover:shadow-xl group cursor-pointer" data-testid={testId}>
+    <Card className="specialty-card bg-card shadow-lg text-center h-full transition-all duration-300 hover:shadow-xl group cursor-pointer" data-testid={testId}>
       <CardContent className="p-8">
-        <div className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300 group-hover:bg-vibrant-turquoise group-hover:scale-110`}>
-          <div className="transition-transform duration-300 group-hover:scale-110">
-            {icon}
-          </div>
+        <div className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300`}>
+          {icon}
         </div>
-        <h3 className="text-xl font-bold text-dark-teal mb-4 transition-colors duration-300 group-hover:text-vibrant-turquoise">{title}</h3>
+        <h3 className="text-xl font-bold text-dark-teal mb-4">{title}</h3>
         <p className="text-muted-foreground mb-6 leading-relaxed">
           {description}
         </p>
@@ -37,7 +35,7 @@ const SpecialtyCard = ({
           onClick={onLearnMore}
           data-testid={`button-learn-more-${title.toLowerCase().replace(/\s+/g, '-')}`}
         >
-          Saiba mais <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          Saiba mais <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Button>
       </CardContent>
     </Card>
