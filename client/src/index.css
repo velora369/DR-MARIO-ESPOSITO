@@ -140,6 +140,25 @@
     .hover\:scale-105:hover {
       transform: scale(1.02);
     }
+    
+    .group:hover .group-hover\:scale-110 {
+      transform: scale(1.05);
+    }
+    
+    /* Reduce animation intensity on mobile for better performance */
+    .animate-fade-in {
+      animation-duration: 0.4s;
+    }
+  }
+  
+  /* Accessibility: Respect reduced motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    .transition-all,
+    .animate-fade-in,
+    .smooth-section {
+      transition: none !important;
+      animation: none !important;
+    }
   }
   
   .text-dark-teal {
