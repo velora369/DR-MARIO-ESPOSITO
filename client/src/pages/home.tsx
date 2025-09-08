@@ -316,42 +316,36 @@ const Home = () => {
                 </h3>
                 <div className="space-y-6">
                   {/* WhatsApp */}
-                  <div className="flex items-center space-x-4" data-testid="contact-whatsapp">
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer"
+                    data-testid="contact-whatsapp"
+                  >
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
                       <FaWhatsapp className="text-white h-6 w-6" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
-                      <a
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-green-600 hover:text-green-700 font-medium"
-                        data-testid="link-whatsapp"
-                      >
-                        (65) 99624-3541
-                      </a>
                     </div>
-                  </div>
+                  </a>
 
                   {/* Instagram */}
-                  <div className="flex items-center space-x-4" data-testid="contact-instagram">
+                  <a
+                    href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer"
+                    data-testid="contact-instagram"
+                  >
                     <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
                       <FaInstagram className="text-white h-6 w-6" />
                     </div>
                     <div>
                       <h4 className="font-semibold text-dark-teal">Instagram</h4>
-                      <a
-                        href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-700 font-medium"
-                        data-testid="link-instagram"
-                      >
-                        @dr_marioesposito
-                      </a>
                     </div>
-                  </div>
+                  </a>
 
                   {/* Address */}
                   <div className="flex items-start space-x-4" data-testid="contact-address">
@@ -370,22 +364,6 @@ const Home = () => {
                     </div>
                   </div>
 
-                  {/* Email */}
-                  <div className="flex items-center space-x-4" data-testid="contact-email">
-                    <div className="w-12 h-12 bg-light-blue-pastel rounded-full flex items-center justify-center">
-                      <Mail className="text-dark-teal h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-dark-teal">Email</h4>
-                      <a
-                        href="mailto:contato@drmarioesposito.com.br"
-                        className="text-muted-foreground hover:text-primary"
-                        data-testid="link-email"
-                      >
-                        contato@drmarioesposito.com.br
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
