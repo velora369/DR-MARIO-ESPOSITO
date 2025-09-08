@@ -102,7 +102,7 @@ const Contact = () => {
                 </h2>
                 <div className="grid gap-6">
                   {/* WhatsApp */}
-                  <Card className="group hover:shadow-md transition-all duration-300" data-testid="contact-whatsapp">
+                  <Card className="group transition-all duration-300" data-testid="contact-whatsapp">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
                         <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
@@ -114,7 +114,7 @@ const Contact = () => {
                             href={whatsappLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-green-600 hover:text-green-700 font-semibold text-lg transition-colors"
+                            className="text-green-600 hover:text-vibrant-turquoise font-semibold text-lg transition-colors"
                             data-testid="link-whatsapp"
                           >
                             WhatsApp
@@ -128,7 +128,7 @@ const Contact = () => {
                   </Card>
 
                   {/* Instagram */}
-                  <Card className="group hover:shadow-md transition-all duration-300" data-testid="contact-instagram">
+                  <Card className="group transition-all duration-300" data-testid="contact-instagram">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
                         <div className="w-14 h-14 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
@@ -140,7 +140,7 @@ const Contact = () => {
                             href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-700 font-semibold text-lg transition-colors"
+                            className="text-purple-600 hover:text-vibrant-turquoise font-semibold text-lg transition-colors"
                             data-testid="link-instagram"
                           >
                             Instagram
