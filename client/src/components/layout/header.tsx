@@ -36,10 +36,11 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center" data-testid="link-home">
-            <div className="text-2xl font-bold text-dark-teal">
-              Dr. Mário Espósito
+            <div className="text-2xl font-bold">
+              <span className="text-dark-teal">DR.</span>
+              <span className="text-vibrant-turquoise ml-1">Mário Espósito</span>
             </div>
-            <div className="ml-2 text-sm text-muted-foreground">
+            <div className="ml-2 text-sm text-dark-graphite-gray">
               CRM-MT 2338
             </div>
           </Link>
