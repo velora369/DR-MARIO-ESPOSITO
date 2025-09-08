@@ -11,7 +11,7 @@ const Specialties = () => {
     {
       id: 'otorrino',
       title: 'Otorrinolaringologia',
-      icon: <Stethoscope className="text-2xl text-white" />,
+      icon: <Stethoscope className="text-2xl text-vibrant-turquoise" />,
       bgColor: 'bg-vibrant-turquoise',
       description: 'Prevenção, diagnóstico e tratamento de doenças do ouvido, nariz, garganta e distúrbios do sono. Especialização em rinite, sinusite, otite, apneia, labirintite, zumbido, rouquidão e halitose.',
       procedures: [
@@ -25,7 +25,7 @@ const Specialties = () => {
     {
       id: 'cirurgia',
       title: 'Cirurgia Plástica Facial',
-      icon: <Syringe className="text-2xl text-white" />,
+      icon: <Syringe className="text-2xl text-vibrant-turquoise" />,
       bgColor: 'bg-soft-blue-green',
       description: 'Procedimentos cirúrgicos estéticos e funcionais para harmonização facial, sempre priorizando resultados naturais e a funcionalidade respiratória quando aplicável.',
       procedures: [
@@ -39,7 +39,7 @@ const Specialties = () => {
     {
       id: 'estetica',
       title: 'Medicina Estética',
-      icon: <Sparkles className="text-2xl text-dark-teal" />,
+      icon: <Sparkles className="text-2xl text-vibrant-turquoise" />,
       bgColor: 'bg-light-blue-pastel',
       description: 'Tratamentos não-cirúrgicos para rejuvenescimento facial, harmonização e correção de imperfeições, sempre com foco em resultados naturais e seguros.',
       procedures: [
@@ -53,7 +53,7 @@ const Specialties = () => {
     {
       id: 'alergia',
       title: 'Alergias',
-      icon: <Wind className="text-2xl text-white" />,
+      icon: <Wind className="text-2xl text-vibrant-turquoise" />,
       bgColor: 'bg-light-bluish-gray',
       description: 'Diagnóstico e tratamento especializado de alergias respiratórias, com foco na rinite alérgica e imunoterapia personalizada com resultados comprovados.',
       procedures: [
