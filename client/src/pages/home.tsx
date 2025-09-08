@@ -1,7 +1,8 @@
 import { Link } from "wouter";
-import { Stethoscope, Syringe, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { Stethoscope, Syringe, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import SpecialtyCard from "@/components/common/specialty-card";
 import ProcedureCard from "@/components/common/procedure-card";
 import FAQAccordion from "@/components/common/faq-accordion";
@@ -25,6 +26,7 @@ const Home = () => {
   };
 
   const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
+  const whatsappScheduleLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito.%20Poderia%20me%20informar%20os%20horários%20disponíveis?";
   
   const featuredProcedures = proceduresData.filter(p => 
     ['rinoplastia', 'botox', 'ronco'].includes(p.id)
@@ -289,6 +291,155 @@ const Home = () => {
               <FaWhatsapp className="mr-3 h-5 w-5" />
               Tirar dúvidas no WhatsApp
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 bg-muted" data-testid="section-contact">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-contact">
+              Contato
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="description-contact">
+              Entre em contato para agendar sua consulta ou esclarecer dúvidas
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Contact Information */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
+                  Informações de Contato
+                </h3>
+                <div className="space-y-6">
+                  {/* WhatsApp */}
+                  <div className="flex items-center space-x-4" data-testid="contact-whatsapp">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                      <FaWhatsapp className="text-white h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
+                      <a
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-green-600 hover:text-green-700 font-medium"
+                        data-testid="link-whatsapp"
+                      >
+                        (65) 99624-3541
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Instagram */}
+                  <div className="flex items-center space-x-4" data-testid="contact-instagram">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                      <FaInstagram className="text-white h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-dark-teal">Instagram</h4>
+                      <a
+                        href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-600 hover:text-purple-700 font-medium"
+                        data-testid="link-instagram"
+                      >
+                        @dr_marioesposito
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Address */}
+                  <div className="flex items-start space-x-4" data-testid="contact-address">
+                    <div className="w-12 h-12 bg-soft-blue-green rounded-full flex items-center justify-center">
+                      <MapPin className="text-white h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-dark-teal">Endereço</h4>
+                      <p className="text-muted-foreground">
+                        <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
+                          Centro Médico Hospital Otorrino<br />
+                          R. Ten. Eulálio Guerra, 50<br />
+                          Araes, Cuiabá - MT, 78005-510
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Email */}
+                  <div className="flex items-center space-x-4" data-testid="contact-email">
+                    <div className="w-12 h-12 bg-light-blue-pastel rounded-full flex items-center justify-center">
+                      <Mail className="text-dark-teal h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-dark-teal">Email</h4>
+                      <a
+                        href="mailto:contato@drmarioesposito.com.br"
+                        className="text-muted-foreground hover:text-primary"
+                        data-testid="link-email"
+                      >
+                        contato@drmarioesposito.com.br
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Hours and Quick Contact */}
+            <div className="space-y-8">
+              {/* Opening Hours */}
+              <div>
+                <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-hours">
+                  Horário de Atendimento
+                </h3>
+                <Card className="shadow-lg">
+                  <CardContent className="p-6">
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center" data-testid="hours-weekday">
+                        <span className="font-medium text-dark-teal">Segunda à Sexta</span>
+                        <span className="text-muted-foreground">08:00 - 18:00</span>
+                      </div>
+                      <div className="flex justify-between items-center" data-testid="hours-saturday">
+                        <span className="font-medium text-dark-teal">Sábado</span>
+                        <span className="text-muted-foreground">08:00 - 12:00</span>
+                      </div>
+                      <div className="flex justify-between items-center" data-testid="hours-sunday">
+                        <span className="font-medium text-dark-teal">Domingo</span>
+                        <span className="text-muted-foreground">Fechado</span>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-border">
+                      <p className="text-sm text-muted-foreground" data-testid="hours-note">
+                        * Atendimento mediante agendamento prévio
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Quick Contact */}
+              <div className="bg-light-blue-pastel/20 p-6 rounded-2xl" data-testid="quick-contact">
+                <h3 className="text-xl font-bold text-dark-teal mb-4">Agendamento Rápido</h3>
+                <p className="text-muted-foreground mb-4">
+                  Para maior agilidade, entre em contato pelo WhatsApp com uma mensagem pré-definida:
+                </p>
+                <a
+                  href={whatsappScheduleLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="whatsapp-btn text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center"
+                  data-testid="button-quick-whatsapp"
+                >
+                  <FaWhatsapp className="mr-3 h-5 w-5" />
+                  Agendar via WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
