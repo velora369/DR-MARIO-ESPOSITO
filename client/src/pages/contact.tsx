@@ -120,6 +120,24 @@ const Contact = () => {
                     </div>
                   </div>
 
+                  {/* Instagram */}
+                  <div className="flex items-center space-x-4" data-testid="contact-instagram">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                      <FaInstagram className="text-white h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-dark-teal">Instagram</h3>
+                      <a
+                        href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-600 hover:text-purple-700 font-medium"
+                        data-testid="link-instagram"
+                      >
+                        @dr_marioesposito
+                      </a>
+                    </div>
+                  </div>
 
                   {/* Address */}
                   <div className="flex items-start space-x-4" data-testid="contact-address">
