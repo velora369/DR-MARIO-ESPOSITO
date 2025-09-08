@@ -43,39 +43,11 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`nav-link font-medium transition-colors ${
-                  location === item.href
-                    ? "text-dark-teal"
-                    : "text-muted-foreground hover:text-vibrant-turquoise"
-                }`}
-                data-testid={`link-${item.name.toLowerCase()}`}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whatsapp-btn text-white px-4 py-2 rounded-lg font-medium flex items-center"
-              data-testid="button-whatsapp"
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              WhatsApp
-            </a>
-          </div>
-
-          {/* Mobile menu */}
-          <div className="md:hidden">
+          {/* Hamburger menu - sempre visível */}
+          <div>
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="sm" data-testid="button-mobile-menu">
+                <Button variant="ghost" size="sm" data-testid="button-hamburger-menu">
                   <Menu className="h-6 w-6 text-muted-foreground" />
                   <span className="sr-only">Abrir menu</span>
                 </Button>
@@ -91,21 +63,23 @@ const Header = () => {
                           ? "text-dark-teal"
                           : "text-muted-foreground hover:text-vibrant-turquoise"
                       }`}
-                      data-testid={`link-mobile-${item.name.toLowerCase()}`}
+                      data-testid={`link-menu-${item.name.toLowerCase()}`}
                     >
                       {item.name}
                     </Link>
                   ))}
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block px-3 py-2 text-green-600 font-medium"
-                    data-testid="link-mobile-whatsapp"
-                  >
-                    <MessageCircle className="w-4 h-4 inline mr-2" />
-                    WhatsApp
-                  </a>
+                  <div className="border-t border-border pt-4 mt-6">
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="whatsapp-btn text-white px-4 py-3 rounded-lg font-medium flex items-center justify-center w-full"
+                      data-testid="link-menu-whatsapp"
+                    >
+                      <MessageCircle className="w-4 h-4 mr-2" />
+                      WhatsApp
+                    </a>
+                  </div>
                 </div>
               </SheetContent>
             </Sheet>
