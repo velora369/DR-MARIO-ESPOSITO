@@ -39,7 +39,7 @@ const Specialties = () => {
     {
       id: 'estetica',
       title: 'Medicina Estética',
-      icon: <Sparkles className="text-2xl text-dark-teal" />,
+      icon: <Sparkles className="text-2xl text-white" />,
       bgColor: 'bg-vibrant-turquoise',
       description: 'Tratamentos não-cirúrgicos para rejuvenescimento facial, harmonização e correção de imperfeições, sempre com foco em resultados naturais e seguros.',
       procedures: [

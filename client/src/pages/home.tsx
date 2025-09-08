@@ -135,7 +135,7 @@ const Home = () => {
             <SpecialtyCard
               title="Medicina Estética"
               description="Preenchimentos, toxina botulínica, fios de sustentação e tratamentos não-cirúrgicos"
-              icon={<Sparkles className="text-2xl text-dark-teal" />}
+              icon={<Sparkles className="text-2xl text-white" />}
               bgColor="bg-vibrant-turquoise"
               onLearnMore={() => window.location.href = '/especialidades'}
               testId="card-specialty-aesthetic"
