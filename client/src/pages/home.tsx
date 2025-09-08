@@ -271,11 +271,11 @@ const Home = () => {
 
           <FAQAccordion items={faqPreviewItems} className="mb-12" />
 
-          <div className="text-center">
-            <Link href="/faq">
+          <div className="text-center flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/faq" className="flex-1 max-w-xs">
               <Button 
                 size="lg"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent mr-4"
+                className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent w-full min-h-[60px] flex items-center justify-center"
                 data-testid="button-all-faq"
               >
                 Ver todas as perguntas
@@ -285,7 +285,7 @@ const Home = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center"
+              className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex-1 max-w-xs w-full min-h-[60px] flex items-center justify-center"
               data-testid="button-faq-whatsapp"
             >
               <FaWhatsapp className="mr-3 h-5 w-5" />
