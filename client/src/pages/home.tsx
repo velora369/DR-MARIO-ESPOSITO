@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { MessageCircle, Stethoscope, UserCheck, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar } from "lucide-react";
+import { MessageCircle, Stethoscope, Syringe, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SpecialtyCard from "@/components/common/specialty-card";
 import ProcedureCard from "@/components/common/procedure-card";
@@ -124,7 +124,7 @@ const Home = () => {
             <SpecialtyCard
               title="Cirurgia Plástica Facial"
               description="Rinoplastia, lifting facial, blefaroplastia e outros procedimentos estéticos"
-              icon={<UserCheck className="text-2xl text-white" />}
+              icon={<Syringe className="text-2xl text-white" />}
               bgColor="bg-soft-blue-green"
               onLearnMore={() => window.location.href = '/especialidades'}
               testId="card-specialty-surgery"
