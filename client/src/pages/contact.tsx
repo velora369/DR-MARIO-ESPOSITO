@@ -109,7 +109,6 @@ const Contact = () => {
                           <FaWhatsapp className="text-white h-7 w-7" />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-bold text-dark-teal text-lg mb-1">WhatsApp</h3>
                           <a
                             href={whatsappLink}
                             target="_blank"
