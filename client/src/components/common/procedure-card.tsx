@@ -59,8 +59,7 @@ const ProcedureCard = ({ procedure, onViewDetails }: ProcedureCardProps) => {
           {procedure.description}
         </p>
         <Button 
-          variant="ghost" 
-          className="text-primary hover:text-vibrant-turquoise font-semibold p-0 transition-all duration-300"
+          className="bg-vibrant-turquoise hover:bg-soft-blue-green text-white font-semibold px-4 py-2 rounded-lg transition-all duration-300 group-hover:shadow-md"
           data-testid={`button-details-${procedure.id}`}
         >
           Ver detalhes <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
