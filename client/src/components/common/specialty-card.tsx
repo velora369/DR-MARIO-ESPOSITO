@@ -20,7 +20,7 @@ const SpecialtyCard = ({
   testId 
 }: SpecialtyCardProps) => {
   return (
-    <Card className="specialty-card bg-white shadow-lg text-center h-full" data-testid={testId}>
+    <Card className="specialty-card bg-card shadow-lg text-center h-full" data-testid={testId}>
       <CardContent className="p-8">
         <div className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-6`}>
           {icon}

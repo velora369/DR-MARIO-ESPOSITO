@@ -25,34 +25,34 @@ const ProcedureCard = ({ procedure, onViewDetails }: ProcedureCardProps) => {
   };
 
   const getIcon = () => {
-    // Since we can't dynamically import Lucide icons, we'll use a simple mapping
-    const iconMap: Record<string, string> = {
-      nose: "👃",
-      lungs: "🫁", 
-      moon: "🌙",
-      eye: "👁️",
-      smile: "😊",
-      ear: "👂",
-      zap: "⚡",
-      droplet: "💧",
-      minus: "➖",
-      "test-tube": "🧪",
-      shield: "🛡️",
-      wind: "💨"
+    // Using proper Lucide icons instead of emojis for flat design
+    const iconMap: Record<string, React.ReactNode> = {
+      nose: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      lungs: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>, 
+      moon: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      eye: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      smile: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      ear: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      zap: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      droplet: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      minus: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      "test-tube": <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      shield: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>,
+      wind: <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>
     };
 
-    return iconMap[procedure.icon] || "🔬";
+    return iconMap[procedure.icon] || <div className="w-6 h-6 bg-dark-teal rounded-sm"></div>;
   };
 
   return (
     <Card 
-      className="procedure-card bg-white shadow-lg h-full cursor-pointer"
+      className="procedure-card bg-card shadow-lg h-full cursor-pointer"
       onClick={onViewDetails}
       data-testid={`card-procedure-${procedure.id}`}
     >
       <CardContent className="p-6">
         <div className={`w-14 h-14 ${getIconBgColor()} rounded-lg flex items-center justify-center mb-4`}>
-          <span className="text-2xl">{getIcon()}</span>
+          <div className="text-white">{getIcon()}</div>
         </div>
         <h3 className="text-xl font-bold text-dark-teal mb-3">{procedure.name}</h3>
         <p className="text-muted-foreground mb-4 text-sm leading-relaxed">

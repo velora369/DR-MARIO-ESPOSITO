@@ -80,7 +80,7 @@ const Home = () => {
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-white/20 hover:bg-white/20"
+                    className="bg-bluish-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-bluish-white/20 hover:bg-bluish-white/20"
                     data-testid="button-hero-specialties"
                   >
                     Conheça as especialidades

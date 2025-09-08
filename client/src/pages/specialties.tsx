@@ -80,7 +80,7 @@ const Specialties = () => {
 
           <div className="grid lg:grid-cols-2 gap-12">
             {specialties.map((specialty) => (
-              <Card key={specialty.id} className="bg-white shadow-lg" data-testid={`card-specialty-${specialty.id}`}>
+              <Card key={specialty.id} className="bg-card shadow-lg" data-testid={`card-specialty-${specialty.id}`}>
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
                     <div className={`w-16 h-16 ${specialty.bgColor} rounded-full flex items-center justify-center mr-4`}>
