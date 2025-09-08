@@ -9,6 +9,7 @@ import Home from "@/pages/home";
 import About from "@/pages/about";
 import Specialties from "@/pages/specialties";
 import Procedures from "@/pages/procedures";
+import FAQ from "@/pages/faq";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -22,6 +23,7 @@ function Router() {
           <Route path="/sobre" component={About} />
           <Route path="/especialidades" component={Specialties} />
           <Route path="/procedimentos" component={Procedures} />
+          <Route path="/faq" component={FAQ} />
           <Route path="/contato" component={Contact} />
           <Route component={NotFound} />
         </Switch>

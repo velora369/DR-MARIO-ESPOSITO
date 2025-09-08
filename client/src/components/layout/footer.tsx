@@ -61,6 +61,15 @@ const Footer = () => {
               </li>
               <li>
                 <Link 
+                  href="/faq" 
+                  className="text-light-bluish-gray hover:text-vibrant-turquoise transition-colors"
+                  data-testid="link-footer-faq"
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href="/contato" 
                   className="text-light-bluish-gray hover:text-vibrant-turquoise transition-colors"
                   data-testid="link-footer-contact"
