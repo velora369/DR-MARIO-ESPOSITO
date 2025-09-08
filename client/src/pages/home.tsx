@@ -128,7 +128,7 @@ const Home = () => {
               title="Cirurgia Plástica Facial"
               description="Rinoplastia, lifting facial, blefaroplastia e outros procedimentos estéticos"
               icon={<Syringe className="text-2xl text-white" />}
-              bgColor="bg-soft-blue-green"
+              bgColor="bg-vibrant-turquoise"
               onLearnMore={() => window.location.href = '/especialidades'}
               testId="card-specialty-surgery"
             />
@@ -136,7 +136,7 @@ const Home = () => {
               title="Medicina Estética"
               description="Preenchimentos, toxina botulínica, fios de sustentação e tratamentos não-cirúrgicos"
               icon={<Sparkles className="text-2xl text-dark-teal" />}
-              bgColor="bg-light-blue-pastel"
+              bgColor="bg-vibrant-turquoise"
               onLearnMore={() => window.location.href = '/especialidades'}
               testId="card-specialty-aesthetic"
             />
@@ -144,7 +144,7 @@ const Home = () => {
               title="Alergias"
               description="Testes alérgicos, imunoterapia e tratamento da rinite alérgica"
               icon={<Wind className="text-2xl text-white" />}
-              bgColor="bg-light-bluish-gray"
+              bgColor="bg-vibrant-turquoise"
               onLearnMore={() => window.location.href = '/especialidades'}
               testId="card-specialty-allergies"
             />
