@@ -204,7 +204,7 @@ const Home = () => {
               <Link href="/sobre">
                 <Button 
                   size="lg" 
-                  className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent mt-[12px] mb-[12px]"
+                  className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent mt-8 mb-[12px]"
                   data-testid="button-learn-more-doctor"
                 >
                   Conheça mais sobre o Dr. Mário
