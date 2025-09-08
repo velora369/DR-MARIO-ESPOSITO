@@ -1,8 +1,9 @@
 import { Link } from "wouter";
-import { MessageCircle, Stethoscope, UserCheck, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp } from "lucide-react";
+import { MessageCircle, Stethoscope, UserCheck, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import SpecialtyCard from "@/components/common/specialty-card";
 import ProcedureCard from "@/components/common/procedure-card";
+import FAQAccordion from "@/components/common/faq-accordion";
 import { proceduresData } from "@/lib/procedures-data";
 import { useEffect, useState } from "react";
 
@@ -27,6 +28,27 @@ const Home = () => {
   const featuredProcedures = proceduresData.filter(p => 
     ['rinoplastia', 'botox', 'ronco'].includes(p.id)
   );
+
+  const faqPreviewItems = [
+    {
+      id: "convenios-preview",
+      question: "Quais convênios médicos o Dr. Mário Espósito atende?",
+      answer: "Atualmente atendemos Unimed e Pax Nacional Prever. Para outros convênios ou consultas particulares, entre em contato.",
+      icon: <CreditCard className="text-white h-5 w-5" />
+    },
+    {
+      id: "agendamento-preview", 
+      question: "Como agendar uma consulta?",
+      answer: "Você pode agendar pelo WhatsApp (65) 99624-3541, telefone (65) 3333-3333 ou presencialmente no consultório.",
+      icon: <Calendar className="text-white h-5 w-5" />
+    },
+    {
+      id: "primeira-consulta-preview",
+      question: "O que levar na primeira consulta?",
+      answer: "Traga documento de identidade, CPF, cartão do convênio, exames anteriores e lista de medicamentos em uso.",
+      icon: <HelpCircle className="text-white h-5 w-5" />
+    }
+  ];
 
   return (
     <div>
@@ -228,6 +250,44 @@ const Home = () => {
                 Ver todos os procedimentos
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Preview */}
+      <section className="py-20 bg-bluish-white" data-testid="section-faq-preview">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-faq-preview">
+              Perguntas Frequentes
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="description-faq-preview">
+              Encontre respostas rápidas para as principais dúvidas sobre nossos atendimentos
+            </p>
+          </div>
+
+          <FAQAccordion items={faqPreviewItems} className="mb-12" />
+
+          <div className="text-center">
+            <Link href="/faq">
+              <Button 
+                size="lg"
+                className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent mr-4"
+                data-testid="button-all-faq"
+              >
+                Ver todas as perguntas
+              </Button>
+            </Link>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center"
+              data-testid="button-faq-whatsapp"
+            >
+              <MessageCircle className="mr-3 h-5 w-5" />
+              Tirar dúvidas no WhatsApp
+            </a>
           </div>
         </div>
       </section>
