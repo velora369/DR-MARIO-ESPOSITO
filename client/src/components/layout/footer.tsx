@@ -114,9 +114,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm"
                   data-testid="link-footer-instagram"
-                >
-                  @dr_marioesposito
-                </a>
+                >Instagram</a>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-vibrant-turquoise mt-1" />
