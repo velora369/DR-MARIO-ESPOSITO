@@ -1,0 +1,140 @@
+Crie um site moderno, responsivo (mobile e desktop), inovador, clean e minimalista para o **Dr. Mário Espósito (CRM-MT 2338)**.  
+O site deve transmitir **profissionalismo, credibilidade, inovação e acolhimento**, com foco em experiência do usuário (UX/UI).  
+Utilizar bastante respiro, tipografia legível, hierarquia clara, cores suaves e elegantes, e botões de ação chamativos e bem posicionados.  
+
+⚠️ Importante: Não utilizar emojis em nenhuma parte do site.  
+Use apenas ícones responsivos, no estilo flat, integrados à paleta de cores.  
+Não usar ícones 3D ou decorativos exagerados, apenas ícones simples, elegantes e consistentes com o design moderno.  
+
+=============================
+🎨 Identidade Visual e Design
+=============================
+Paleta de cores oficial:
+- Azul petróleo escuro (#13313E)  
+- Azul turquesa vivo (#59BFCD)  
+- Azul esverdeado suave (#6FAAB3)  
+- Azul claro pastel (#BBE2E6)  
+- Branco azulado (#F5FCFC)  
+- Cinza azulado claro (#ADBBC8)  
+- Cinza escuro grafite (#384A50)  
+- Apoio: Cinza quase branco (#DDE4E5) e Tom de pele suave (#8B7E7D).  
+
+Estilo visual:
+- Moderno, minimalista e clean.  
+- Inovador, com excelente UX/UI, navegabilidade intuitiva e experiência envolvente.  
+- Ícones devem ser utilizados no lugar de emojis, aplicados em harmonia com a paleta de cores.  
+- Equilíbrio entre **conteúdo médico técnico** e **comunicação acessível** ao público.  
+
+=============================
+👨‍⚕️ Sobre o Dr. Mário Espósito
+=============================
+Destaque o Dr. Mário Espósito como um médico de **alta autoridade e reconhecimento nacional e internacional**.  
+
+- Professor da Faculdade de Medicina da Universidade de Cuiabá-MT.  
+- Chefe do Serviço de Otorrinolaringologia do Hospital Geral Universitário (HGU) – Cuiabá-MT.  
+- Coordenador da Residência Médica em Otorrinolaringologia e Cirurgia Cérvico-Facial do Hospital Otorrino-Cuiabá-MT.  
+- Mestre em Otorrinolaringologia pela UFRJ-RJ.  
+- Doutor em Otorrinolaringologia pela Faculdade de Ciências Médicas da Santa Casa de São Paulo-SP.  
+- Pós-Graduação em Cirurgia de Cabeça e Pescoço pela PUC-RJ.  
+- Pós-Graduação em Medicina Estética e Cirurgia Plástica da Face pelo IBPG-SP.  
+- Membro Titular da Associação Brasileira de Otorrinolaringologia e Cirurgia Cérvico-Facial.  
+- Membro Fundador da Interamerican Association of Pediatric Otolaringology.  
+- Membro da International Federation of Facial Plastic Surgery Societies.  
+- Membro Efetivo da Sociedade Brasileira de Alergia e Imunopatologia (SBAI).  
+- Membro Titular do Colégio Brasileiro de Cirurgiões (TCBC).  
+- Membro Titular da Academia Brasileira de Cirurgia Plástica da Face.  
+
+Mensagem-chave:  
+“O Dr. Mário Espósito alia experiência acadêmica, prática clínica e técnicas modernas para cuidar da saúde e da estética facial de seus pacientes, sempre com segurança, ética e resultados naturais.”  
+
+=============================
+🌿 Especialidades
+=============================
+- **Otorrinolaringologia**: prevenção, diagnóstico e tratamento de doenças do ouvido, nariz, garganta e sono (ex.: rinite, sinusite, otite, apneia, labirintite, zumbido, rouquidão, halitose, etc.).  
+- **Cirurgia Plástica da Face**: rinoplastia, blefaroplastia, lifting facial, otoplastia, lipoaspiração cervical, mentoplastia, frontoplastia.  
+- **Medicina Estética**: bichectomia, bioplastia, preenchimentos, toxina botulínica, fios de sustentação, carboxiterapia, peeling, tratamento da acne.  
+- **Alergias**: rinite alérgica, testes alérgicos e imunoterapia com vacinas para alergia.  
+
+=============================
+🩺 Procedimentos (detalhar no site)
+=============================
+**Otorrinolaringologia**  
+Listar e detalhar: adenoamigdalectomia, adenoidectomia, cirurgia do ronco, septoplastia, rinoseptoplastia, timpanoplastia, implante coclear, polissonografia, exames auditivos (audiometria, BERA, impedanciometria, emissões otoacústicas), tratamento de labirintite, zumbido, surdez, entre outros.  
+
+**Alergias**  
+- Rinite Alérgica: sintomas, diagnóstico e tratamento.  
+- Testes Alérgicos: detecção de agentes causadores.  
+- Vacinas para Alergia (imunoterapia): resultados comprovados em mais de 70% dos casos.  
+
+**Cirurgia Plástica da Face**  
+- Rinoplastia (harmonia + função respiratória).  
+- Blefaroplastia (cirurgia das pálpebras).  
+- Ritidoplastia (lifting facial).  
+- Otoplastia (correção de orelhas).  
+- Mentoplastia (equilíbrio do queixo).  
+- Frontoplastia (rugas frontais e sobrancelhas).  
+- Lipoaspiração Cervical (papada).  
+
+**Medicina Estética**  
+- Bichectomia (afinamento facial).  
+- Bioplastia (sem cortes, com PMMA). Subcategorias: malar, mandíbula, nariz, queixo, lábios, mãos, rugas/cicatrizes.  
+- Fios de Sustentação.  
+- Carboxiterapia (flacidez, olheiras, celulite, estrias).  
+- Peelings (químicos e cristal).  
+- Preenchimentos (ácido hialurônico, gordura).  
+- Toxina Botulínica (Botox® e Dysport®).  
+- Tratamento da Acne e cicatrizes.  
+
+=============================
+📱 Estrutura de Páginas
+=============================
+- **Home (Landing Page)**  
+  - Hero: “Respire melhor. Viva melhor. Valorize sua autoestima.”  
+  - Destaque de especialidades em cards com ícones flat, no lugar de emojis.  
+  - Sessão “Por que escolher o Dr. Mário?” com credenciais.  
+  - Procedimentos em destaque.  
+  - Depoimentos (quando houver).  
+  - CTA direto para WhatsApp.  
+
+- **Sobre o Dr. Mário**  
+  - Biografia detalhada, credenciais, memberships.  
+  - Foto institucional.  
+
+- **Especialidades**  
+  - Cards interativos: Otorrino, Cirurgia Facial, Estética, Alergias.  
+  - Cada card leva para lista de procedimentos.  
+
+- **Procedimentos**  
+  - Listagem completa com busca e filtros.  
+  - Página de cada procedimento: descrição, indicações, como é feito, tempo, anestesia, recuperação, riscos, cuidados.  
+  - CTA para agendar avaliação.  
+
+- **Contato**  
+  - WhatsApp (link direto com mensagem pronta).  
+  - Formulário simples.  
+  - Endereço + mapa.  
+  - Horários de atendimento.  
+
+- **Footer**  
+  - Logo + CRM-MT 2338.  
+  - Links rápidos.  
+  - Redes sociais.  
+  - Aviso: “Conteúdo informativo. Não substitui consulta médica.”  
+
+=============================
+✨ Calls to Action
+=============================
+Usar CTAs claros em toda a navegação (sem emojis):  
+- “Agende sua consulta pelo WhatsApp”  
+- “Saiba mais sobre este procedimento”  
+- “Ver todos os procedimentos”  
+- “Entre em contato”  
+
+=============================
+📌 Diretriz Final
+=============================
+Criar um site que una **autoridade médica + modernidade digital**, com **cópia clara, acessível, ética e persuasiva**, design clean e inovador, sempre destacando a experiência do **Dr. Mário Espósito** e os benefícios de seus tratamentos para a saúde e autoestima dos pacientes.  
+
+⚠️ Lembre-se:  
+- **Não usar emojis em nenhuma parte do site.**  
+- **Utilizar apenas ícones flat, simples e responsivos, seguindo a paleta de cores.**
