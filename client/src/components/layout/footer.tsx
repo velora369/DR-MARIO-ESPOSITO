@@ -108,16 +108,7 @@ const Footer = () => {
                   (65) 99624-3541
                 </a>
               </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-vibrant-turquoise" />
-                <a 
-                  href="mailto:contato@drmarioesposito.com.br" 
-                  className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm"
-                  data-testid="link-footer-email"
-                >
-                  contato@drmarioesposito.com.br
-                </a>
-              </div>
+              
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-vibrant-turquoise mt-1" />
                 <span className="text-light-bluish-gray text-sm">
