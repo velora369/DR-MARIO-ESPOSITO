@@ -104,7 +104,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="hover:text-vibrant-turquoise text-sm bg-[#2b2c3700] text-[#59bfcd]"
                   data-testid="link-footer-whatsapp"
-                >(65) 99624-3541</a>
+                >WhatsApp</a>
               </div>
               <div className="flex items-center space-x-3">
                 <FaInstagram className="w-4 h-4 text-vibrant-turquoise" />
