@@ -37,7 +37,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center" data-testid="link-home">
             <div className="text-2xl font-bold">
-              <span className="text-dark-teal">DR.</span>
+              <span className="text-dark-teal">Dr.</span>
               <span className="text-vibrant-turquoise ml-1">Mário Espósito</span>
             </div>
             <div className="ml-2 text-sm text-dark-graphite-gray">
