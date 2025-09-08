@@ -1,0 +1,49 @@
+Atualize o site do Dr. Mário Espósito com as seguintes instruções obrigatórias:
+
+=============================
+🚫 Emojis
+=============================
+- Proibido o uso de emojis em qualquer parte do site.  
+- Principalmente nos blocos de cards de especialidades e procedimentos, **não devem aparecer emojis** como nariz, lua, raio, etc.  
+- No lugar, utilize **ícones flat, responsivos e minimalistas**, sempre em harmonia com a paleta de cores oficial.  
+- Esses ícones devem reforçar a identidade médica e profissional do site, transmitindo credibilidade.  
+- Ícones devem ser vetoriais, simples e alinhados ao design moderno.  
+
+=============================
+🎨 Paleta de Cores
+=============================
+Utilizar somente a paleta oficial (sem preto e sem cores fora dela):
+- Azul petróleo escuro (#13313E)  
+- Azul turquesa vivo (#59BFCD)  
+- Azul esverdeado suave (#6FAAB3)  
+- Azul claro pastel (#BBE2E6)  
+- Branco azulado (#F5FCFC)  
+- Cinza azulado claro (#ADBBC8)  
+- Cinza escuro grafite (#384A50)  
+- Apoio: Cinza quase branco (#DDE4E5) e tom de pele suave (#8B7E7D).  
+
+=============================
+⚡ UX/UI – Experiência do Usuário
+=============================
+O site deve ser moderno, inovador, clean e minimalista, com excelente usabilidade.  
+Incluir:
+- **Microanimações nos cards** de especialidades e procedimentos: ao passar o mouse (hover), aplicar efeitos sutis como:  
+  - Leve aumento de escala (zoom-in discreto)  
+  - Sombra suave de destaque  
+  - Ícone ganhar uma cor de destaque dentro da paleta (ex.: azul turquesa vivo)  
+- **Botões de CTA animados**: hover com mudança de cor e transição suave.  
+- **Transições fluídas** entre seções ao rolar a página.  
+- **Feedback visual** em elementos interativos (links, ícones, botões).  
+
+=============================
+📱 Responsividade
+=============================
+- O design deve funcionar de forma fluida tanto no desktop quanto no mobile, mantendo os ícones claros e legíveis.  
+- Os efeitos de animação devem ser leves e adaptáveis ao mobile, sem comprometer performance.  
+
+=============================
+⚠️ Observação Final
+=============================
+- Nenhum emoji deve ser usado em nenhuma parte do site.  
+- Todos os elementos visuais devem seguir a identidade visual do Dr. Mário Espósito, com ícones flat e microanimações que tragam modernidade e interação ao usuário.  
+- O objetivo é transmitir **profissionalismo, credibilidade e inovação**.
