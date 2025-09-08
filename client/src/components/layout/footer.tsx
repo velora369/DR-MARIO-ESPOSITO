@@ -102,7 +102,7 @@ const Footer = () => {
                   href={whatsappLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm bg-[#59bfcd]"
+                  className="hover:text-vibrant-turquoise text-sm bg-[#2b2c3700] text-[#59bfcd]"
                   data-testid="link-footer-whatsapp"
                 >WhatsApp</a>
               </div>
