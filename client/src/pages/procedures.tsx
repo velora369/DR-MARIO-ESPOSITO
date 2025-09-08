@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -11,6 +11,11 @@ const Procedures = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedProcedure, setSelectedProcedure] = useState<Procedure | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const filteredProcedures = useMemo(() => {
     return proceduresData.filter((procedure) => {
