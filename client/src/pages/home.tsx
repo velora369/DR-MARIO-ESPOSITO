@@ -70,7 +70,7 @@ const Home = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center"
+                  className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                   data-testid="button-hero-whatsapp"
                 >
                   <MessageCircle className="mr-3 h-6 w-6" />
@@ -80,7 +80,7 @@ const Home = () => {
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="bg-bluish-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-bluish-white/20 hover:bg-bluish-white/20"
+                    className="bg-bluish-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-bluish-white/20 hover:bg-bluish-white/20 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
                     data-testid="button-hero-specialties"
                   >
                     Conheça as especialidades
@@ -101,7 +101,7 @@ const Home = () => {
       </section>
 
       {/* Specialties Preview */}
-      <section className="py-20 bg-bluish-white" data-testid="section-specialties">
+      <section className="py-20 bg-bluish-white smooth-section animate-fade-in" data-testid="section-specialties">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-specialties">
