@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, Info } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541";
@@ -108,7 +108,18 @@ const Footer = () => {
                   (65) 99624-3541
                 </a>
               </div>
-              
+              <div className="flex items-center space-x-3">
+                <FaInstagram className="w-4 h-4 text-vibrant-turquoise" />
+                <a 
+                  href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm"
+                  data-testid="link-footer-instagram"
+                >
+                  @dr_marioesposito
+                </a>
+              </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-vibrant-turquoise mt-1" />
                 <span className="text-light-bluish-gray text-sm">
