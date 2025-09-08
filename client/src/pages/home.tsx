@@ -90,7 +90,7 @@ const Home = () => {
             </div>
             <div className="hidden lg:block">
               <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800"
+                src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/09/sao-35-anos-desde-a-formatura-em-medicina-atuando-com-eficiencia-na-profissao-que-busca-cuidar-.webp"
                 alt="Consultório médico moderno e profissional"
                 className="rounded-2xl shadow-2xl w-full h-auto"
                 data-testid="img-hero"
@@ -155,7 +155,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800"
+                src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/09/sao-35-anos-desde-a-formatura-em-medicina-atuando-com-eficiencia-na-profissao-que-busca-cuidar-.webp"
                 alt="Dr. Mário Espósito - Médico especialista"
                 className="rounded-2xl shadow-2xl w-full h-auto"
                 data-testid="img-doctor"

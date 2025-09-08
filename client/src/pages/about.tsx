@@ -34,7 +34,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800"
+                src="https://yungwizzeprod2.wordpress.com/wp-content/uploads/2025/09/sao-35-anos-desde-a-formatura-em-medicina-atuando-com-eficiencia-na-profissao-que-busca-cuidar-.webp"
                 alt="Dr. Mário Espósito em seu consultório"
                 className="rounded-2xl shadow-2xl w-full h-auto"
                 data-testid="img-doctor"
