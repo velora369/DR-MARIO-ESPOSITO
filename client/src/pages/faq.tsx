@@ -31,7 +31,6 @@ const FAQ = () => {
           <p>Você pode agendar sua consulta de três formas fáceis:</p>
           <ul className="list-disc list-inside ml-4 space-y-1">
             <li><strong>WhatsApp:</strong> (65) 99624-3541 - Forma mais rápida e prática</li>
-            <li><strong>Telefone:</strong> (65) 3333-3333 - Horário comercial</li>
             <li><strong>Presencialmente:</strong> No consultório durante o horário de atendimento</li>
           </ul>
           <p className="mt-3 text-sm">
@@ -66,9 +65,9 @@ const FAQ = () => {
         <div className="space-y-2">
           <p>O consultório está localizado em:</p>
           <div className="ml-4">
-            <p><strong>Endereço:</strong> Rua das Flores, 123</p>
-            <p>Centro, Cuiabá - MT</p>
-            <p>CEP: 78000-000</p>
+            <p><strong>Centro Médico Hospital Otorrino</strong></p>
+            <p>R. Ten. Eulálio Guerra, 50</p>
+            <p>Araes, Cuiabá - MT, 78005-510</p>
           </div>
           <p className="mt-3">
             O consultório conta com estacionamento próprio e fica próximo ao centro da cidade, 

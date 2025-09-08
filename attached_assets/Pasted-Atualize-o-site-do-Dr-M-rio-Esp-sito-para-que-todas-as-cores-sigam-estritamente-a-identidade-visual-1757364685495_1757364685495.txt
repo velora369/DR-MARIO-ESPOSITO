@@ -1,0 +1,37 @@
+Atualize o site do Dr. Mário Espósito para que todas as cores sigam estritamente a identidade visual oficial, sem utilizar preto em nenhuma parte da interface.  
+O preto não faz parte da paleta do Dr. Mário.  
+Substitua o preto por tons que pertençam à paleta correta, mantendo um design moderno, minimalista e clean.  
+
+=============================
+🎨 Paleta de Cores Oficial
+=============================
+- Azul petróleo escuro → #13313E  
+- Azul turquesa vivo → #59BFCD  
+- Azul esverdeado suave → #6FAAB3  
+- Azul claro pastel → #BBE2E6  
+- Branco azulado → #F5FCFC  
+- Cinza azulado claro → #ADBBC8  
+- Cinza escuro grafite → #384A50  
+- Apoio: Cinza quase branco (#DDE4E5) e tom de pele suave (#8B7E7D).  
+
+=============================
+📌 Diretrizes de Uso
+=============================
+- Usar **azul petróleo escuro (#13313E)** e **cinza escuro grafite (#384A50)** para títulos e textos de maior contraste, no lugar do preto.  
+- Usar **branco azulado (#F5FCFC)** como cor de fundo principal para manter o site leve e moderno.  
+- Usar **azul turquesa vivo (#59BFCD)** para botões, CTAs e destaques.  
+- Usar **tons secundários de azul (#6FAAB3 e #BBE2E6)** para hover, ícones e detalhes.  
+- Ícones devem seguir o estilo flat, responsivos, aplicados na paleta, sem uso de emojis ou ícones 3D.  
+- O contraste deve ser elegante, nunca pesado. O objetivo é manter uma estética moderna, clean e médica.  
+
+=============================
+📱 Responsividade
+=============================
+- As cores devem se adaptar de forma consistente entre mobile e desktop, sem variações fora da paleta.  
+- O design deve manter consistência visual com os posts e materiais já existentes do Dr. Mário Espósito (como os exemplos de especialidades, convênios, localização e chamadas no WhatsApp).  
+
+=============================
+⚠️ Observação Final
+=============================
+O preto deve ser totalmente evitado, pois descaracteriza a identidade visual.  
+Use apenas as cores listadas acima para todos os elementos do site.

@@ -96,10 +96,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-vibrant-turquoise" />
-                <span className="text-light-bluish-gray text-sm">(65) 3333-3333</span>
-              </div>
-              <div className="flex items-center space-x-3">
                 <MessageCircle className="w-4 h-4 text-vibrant-turquoise" />
                 <a 
                   href={whatsappLink} 
@@ -124,8 +120,9 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-vibrant-turquoise mt-1" />
                 <span className="text-light-bluish-gray text-sm">
-                  Rua das Flores, 123<br />
-                  Centro, Cuiabá - MT
+                  Centro Médico Hospital Otorrino<br />
+                  R. Ten. Eulálio Guerra, 50<br />
+                  Araes, Cuiabá - MT, 78005-510
                 </span>
               </div>
             </div>

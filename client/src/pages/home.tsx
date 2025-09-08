@@ -39,7 +39,7 @@ const Home = () => {
     {
       id: "agendamento-preview", 
       question: "Como agendar uma consulta?",
-      answer: "Você pode agendar pelo WhatsApp (65) 99624-3541, telefone (65) 3333-3333 ou presencialmente no consultório.",
+      answer: "Você pode agendar pelo WhatsApp (65) 99624-3541 ou presencialmente no consultório.",
       icon: <Calendar className="text-white h-5 w-5" />
     },
     {

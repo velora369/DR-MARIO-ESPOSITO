@@ -119,16 +119,6 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  {/* Phone */}
-                  <div className="flex items-center space-x-4" data-testid="contact-phone">
-                    <div className="w-12 h-12 bg-vibrant-turquoise rounded-full flex items-center justify-center">
-                      <Phone className="text-white h-6 w-6" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-dark-teal">Telefone</h3>
-                      <p className="text-muted-foreground">(65) 3333-3333</p>
-                    </div>
-                  </div>
 
                   {/* Address */}
                   <div className="flex items-start space-x-4" data-testid="contact-address">
@@ -139,9 +129,9 @@ const Contact = () => {
                       <h3 className="font-semibold text-dark-teal">Endereço</h3>
                       <p className="text-muted-foreground">
                         <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-                          Rua das Flores, 123<br />
-                          Centro, Cuiabá - MT<br />
-                          CEP: 78000-000
+                          Centro Médico Hospital Otorrino<br />
+                          R. Ten. Eulálio Guerra, 50<br />
+                          Araes, Cuiabá - MT, 78005-510
                         </a>
                       </p>
                     </div>
@@ -336,14 +326,14 @@ const Contact = () => {
               <CardContent className="p-4">
                 <div className="w-full h-96 rounded-xl overflow-hidden" data-testid="map-interactive">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.8282!2d-56.09456!3d-15.60181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939a0eb64e7f8d77%3A0x123456789abcdef!2sRua%20das%20Flores%2C%20123%20-%20Centro%2C%20Cuiab%C3%A1%20-%20MT!5e0!3m2!1sen!2sbr!4v1625680000000!5m2!1sen!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.8282!2d-56.09456!3d-15.60181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939a0eb64e7f8d77%3A0x123456789abcdef!2sR.%20Ten.%20Eul%C3%A1lio%20Guerra%2C%2050%20-%20Araes%2C%20Cuiab%C3%A1%20-%20MT%2C%2078005-510!5e0!3m2!1sen!2sbr!4v1625680000000!5m2!1sen!2sbr"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Localização do Consultório Dr. Mário Espósito"
+                    title="Centro Médico Hospital Otorrino - Dr. Mário Espósito"
                   ></iframe>
                 </div>
               </CardContent>
