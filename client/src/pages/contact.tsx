@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { MessageCircle, Phone, Mail, MapPin, Clock, Info, Send, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Info, Send, CheckCircle } from "lucide-react";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -103,7 +104,7 @@ const Contact = () => {
                   {/* WhatsApp */}
                   <div className="flex items-center space-x-4" data-testid="contact-whatsapp">
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                      <MessageCircle className="text-white h-6 w-6" />
+                      <FaWhatsapp className="text-white h-6 w-6" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-dark-teal">WhatsApp</h3>
@@ -199,7 +200,7 @@ const Contact = () => {
                   className="whatsapp-btn text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center"
                   data-testid="button-quick-whatsapp"
                 >
-                  <MessageCircle className="mr-3 h-5 w-5" />
+                  <FaWhatsapp className="mr-3 h-5 w-5" />
                   Agendar via WhatsApp
                 </a>
               </div>

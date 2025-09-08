@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { MessageCircle, Stethoscope, Syringe, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar } from "lucide-react";
+import { Stethoscope, Syringe, Sparkles, Wind, GraduationCap, Globe, Award, ChevronUp, HelpCircle, CreditCard, Calendar } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import SpecialtyCard from "@/components/common/specialty-card";
 import ProcedureCard from "@/components/common/procedure-card";
@@ -73,7 +74,7 @@ const Home = () => {
                   className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg h-14 min-w-[280px] whitespace-nowrap"
                   data-testid="button-hero-whatsapp"
                 >
-                  <MessageCircle className="mr-3 h-6 w-6" />
+                  <FaWhatsapp className="mr-3 h-6 w-6" />
                   Agende sua consulta
                 </a>
                 <Link href="/especialidades">
@@ -285,7 +286,7 @@ const Home = () => {
               className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center"
               data-testid="button-faq-whatsapp"
             >
-              <MessageCircle className="mr-3 h-5 w-5" />
+              <FaWhatsapp className="mr-3 h-5 w-5" />
               Tirar dúvidas no WhatsApp
             </a>
           </div>

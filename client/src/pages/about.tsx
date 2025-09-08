@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { MessageCircle, GraduationCap, Hospital, Award } from "lucide-react";
+import { GraduationCap, Hospital, Award } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
@@ -106,7 +107,7 @@ const About = () => {
                   className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center"
                   data-testid="button-whatsapp"
                 >
-                  <MessageCircle className="mr-3 h-5 w-5" />
+                  <FaWhatsapp className="mr-3 h-5 w-5" />
                   Agende sua consulta
                 </a>
                 <Link href="/especialidades">

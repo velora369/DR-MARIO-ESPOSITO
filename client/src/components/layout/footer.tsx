@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Phone, MessageCircle, Mail, MapPin, Info } from "lucide-react";
+import { Phone, Mail, MapPin, Info } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541";
@@ -96,7 +97,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-white">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <MessageCircle className="w-4 h-4 text-vibrant-turquoise" />
+                <FaWhatsapp className="w-4 h-4 text-vibrant-turquoise" />
                 <a 
                   href={whatsappLink} 
                   target="_blank" 

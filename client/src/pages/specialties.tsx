@@ -1,4 +1,5 @@
-import { MessageCircle, Stethoscope, Syringe, Sparkles, Wind, Check } from "lucide-react";
+import { Stethoscope, Syringe, Sparkles, Wind, Check } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -123,7 +124,7 @@ const Specialties = () => {
               className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center"
               data-testid="button-whatsapp"
             >
-              <MessageCircle className="mr-3 h-5 w-5" />
+              <FaWhatsapp className="mr-3 h-5 w-5" />
               Agende uma consulta
             </a>
           </div>

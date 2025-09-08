@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -76,7 +77,7 @@ const Header = () => {
                       className="whatsapp-btn text-white px-4 py-3 rounded-lg font-medium flex items-center justify-center w-full"
                       data-testid="link-menu-whatsapp"
                     >
-                      <MessageCircle className="w-4 h-4 mr-2" />
+                      <FaWhatsapp className="w-4 h-4 mr-2" />
                       WhatsApp
                     </a>
                   </div>
