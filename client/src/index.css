@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(192, 20%, 98%);
+  --foreground: hsl(200, 15%, 20%);
+  --card: hsl(192, 30%, 99%);
+  --card-foreground: hsl(200, 15%, 20%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(200, 15%, 20%);
+  --primary: hsl(200, 85%, 45%);
+  --primary-foreground: hsl(192, 30%, 99%);
+  --secondary: hsl(192, 20%, 85%);
+  --secondary-foreground: hsl(200, 15%, 35%);
+  --muted: hsl(192, 15%, 92%);
+  --muted-foreground: hsl(200, 10%, 45%);
+  --accent: hsl(185, 60%, 60%);
+  --accent-foreground: hsl(192, 30%, 99%);
+  --destructive: hsl(356, 90%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(192, 20%, 85%);
+  --input: hsl(192, 25%, 95%);
+  --ring: hsl(200, 85%, 45%);
+  --radius: 12px;
+  
+  /* Custom Medical Theme Colors */
+  --dark-teal: hsl(200, 45%, 16%);
+  --vibrant-turquoise: hsl(188, 54%, 58%);
+  --soft-blue-green: hsl(188, 32%, 56%);
+  --light-blue-pastel: hsl(186, 43%, 81%);
+  --bluish-white: hsl(180, 43%, 97%);
+  --light-bluish-gray: hsl(213, 20%, 73%);
+  --dark-graphite-gray: hsl(200, 19%, 29%);
+  --support-light-gray: hsl(196, 16%, 90%);
+  --support-skin-tone: hsl(13, 7%, 52%);
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+.dark {
+  --background: hsl(200, 45%, 16%);
+  --foreground: hsl(180, 43%, 97%);
+  --card: hsl(200, 19%, 29%);
+  --card-foreground: hsl(180, 43%, 97%);
+  --popover: hsl(200, 45%, 16%);
+  --popover-foreground: hsl(180, 43%, 97%);
+  --primary: hsl(188, 54%, 58%);
+  --primary-foreground: hsl(200, 45%, 16%);
+  --secondary: hsl(200, 19%, 29%);
+  --secondary-foreground: hsl(180, 43%, 97%);
+  --muted: hsl(200, 19%, 29%);
+  --muted-foreground: hsl(213, 20%, 73%);
+  --accent: hsl(188, 32%, 56%);
+  --accent-foreground: hsl(200, 45%, 16%);
+  --destructive: hsl(356, 90%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(200, 19%, 29%);
+  --input: hsl(200, 19%, 29%);
+  --ring: hsl(188, 54%, 58%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--dark-teal)) 0%, hsl(var(--vibrant-turquoise)) 100%);
+  }
+  
+  .whatsapp-btn {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    transition: all 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+  }
+  
+  .specialty-card {
+    transition: all 0.3s ease;
+  }
+  
+  .specialty-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .procedure-card {
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .procedure-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    transition: color 0.2s ease;
+  }
+  
+  .text-dark-teal {
+    color: hsl(var(--dark-teal));
+  }
+  
+  .bg-dark-teal {
+    background-color: hsl(var(--dark-teal));
+  }
+  
+  .text-vibrant-turquoise {
+    color: hsl(var(--vibrant-turquoise));
+  }
+  
+  .bg-vibrant-turquoise {
+    background-color: hsl(var(--vibrant-turquoise));
+  }
+  
+  .text-soft-blue-green {
+    color: hsl(var(--soft-blue-green));
+  }
+  
+  .bg-soft-blue-green {
+    background-color: hsl(var(--soft-blue-green));
+  }
+  
+  .text-light-blue-pastel {
+    color: hsl(var(--light-blue-pastel));
+  }
+  
+  .bg-light-blue-pastel {
+    background-color: hsl(var(--light-blue-pastel));
+  }
+  
+  .bg-bluish-white {
+    background-color: hsl(var(--bluish-white));
+  }
+  
+  .text-light-bluish-gray {
+    color: hsl(var(--light-bluish-gray));
+  }
+  
+  .bg-light-bluish-gray {
+    background-color: hsl(var(--light-bluish-gray));
+  }
+  
+  .text-dark-graphite-gray {
+    color: hsl(var(--dark-graphite-gray));
+  }
+  
+  .bg-dark-graphite-gray {
+    background-color: hsl(var(--dark-graphite-gray));
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
