@@ -25,7 +25,7 @@ const Header = () => {
     { name: "Contato", href: "/contato" },
   ];
 
-  const whatsappLink = "https://wa.me/5565999999999?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
 
   return (
     <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${

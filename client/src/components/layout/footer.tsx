@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Phone, MessageCircle, Mail, MapPin, Info } from "lucide-react";
 
 const Footer = () => {
-  const whatsappLink = "https://wa.me/5565999999999";
+  const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541";
 
   return (
     <footer className="bg-dark-teal text-white py-16">
@@ -99,7 +99,7 @@ const Footer = () => {
                   className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm"
                   data-testid="link-footer-whatsapp"
                 >
-                  (65) 99999-9999
+                  (65) 99624-3541
                 </a>
               </div>
               <div className="flex items-center space-x-3">

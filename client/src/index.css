@@ -73,7 +73,7 @@
 
 @layer components {
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--dark-teal)) 0%, hsl(var(--vibrant-turquoise)) 100%);
+    background: linear-gradient(135deg, #13313E 0%, #59BFCD 100%);
   }
   
   .whatsapp-btn {
