@@ -4,61 +4,63 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(192, 20%, 98%);
-  --foreground: hsl(200, 15%, 20%);
-  --card: hsl(192, 30%, 99%);
-  --card-foreground: hsl(200, 15%, 20%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(200, 15%, 20%);
-  --primary: hsl(200, 85%, 45%);
-  --primary-foreground: hsl(192, 30%, 99%);
-  --secondary: hsl(192, 20%, 85%);
-  --secondary-foreground: hsl(200, 15%, 35%);
-  --muted: hsl(192, 15%, 92%);
-  --muted-foreground: hsl(200, 10%, 45%);
-  --accent: hsl(185, 60%, 60%);
-  --accent-foreground: hsl(192, 30%, 99%);
-  --destructive: hsl(356, 90%, 54%);
-  --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(192, 20%, 85%);
-  --input: hsl(192, 25%, 95%);
-  --ring: hsl(200, 85%, 45%);
+  /* Official Dr. Mário Espósito Color Palette */
+  --dark-teal: 19, 49, 62;        /* #13313E - Azul petróleo escuro */
+  --vibrant-turquoise: 89, 191, 205;  /* #59BFCD - Azul turquesa vivo */
+  --soft-blue-green: 111, 170, 179;   /* #6FAAB3 - Azul esverdeado suave */
+  --light-blue-pastel: 187, 226, 230; /* #BBE2E6 - Azul claro pastel */
+  --bluish-white: 245, 252, 252;      /* #F5FCFC - Branco azulado */
+  --light-bluish-gray: 173, 187, 200; /* #ADBBC8 - Cinza azulado claro */
+  --dark-graphite-gray: 56, 74, 80;   /* #384A50 - Cinza escuro grafite */
+  --support-light-gray: 221, 228, 229; /* #DDE4E5 - Cinza quase branco */
+  --support-skin-tone: 139, 126, 125;  /* #8B7E7D - Tom de pele suave */
+
+  /* Mapped Shadcn Colors Using Official Palette */
+  --background: rgb(var(--bluish-white));
+  --foreground: rgb(var(--dark-teal));
+  --card: rgb(var(--bluish-white));
+  --card-foreground: rgb(var(--dark-teal));
+  --popover: rgb(var(--bluish-white));
+  --popover-foreground: rgb(var(--dark-teal));
+  --primary: rgb(var(--vibrant-turquoise));
+  --primary-foreground: rgb(var(--bluish-white));
+  --secondary: rgb(var(--light-blue-pastel));
+  --secondary-foreground: rgb(var(--dark-teal));
+  --muted: rgb(var(--support-light-gray));
+  --muted-foreground: rgb(var(--dark-graphite-gray));
+  --accent: rgb(var(--soft-blue-green));
+  --accent-foreground: rgb(var(--bluish-white));
+  --destructive: rgb(220, 38, 38);
+  --destructive-foreground: rgb(var(--bluish-white));
+  --border: rgb(var(--light-blue-pastel));
+  --input: rgb(var(--support-light-gray));
+  --ring: rgb(var(--vibrant-turquoise));
   --radius: 12px;
-  
-  /* Custom Medical Theme Colors */
-  --dark-teal: hsl(200, 45%, 16%);
-  --vibrant-turquoise: hsl(188, 54%, 58%);
-  --soft-blue-green: hsl(188, 32%, 56%);
-  --light-blue-pastel: hsl(186, 43%, 81%);
-  --bluish-white: hsl(180, 43%, 97%);
-  --light-bluish-gray: hsl(213, 20%, 73%);
-  --dark-graphite-gray: hsl(200, 19%, 29%);
-  --support-light-gray: hsl(196, 16%, 90%);
-  --support-skin-tone: hsl(13, 7%, 52%);
 
   --font-sans: 'Inter', sans-serif;
 }
 
 .dark {
-  --background: hsl(200, 45%, 16%);
-  --foreground: hsl(180, 43%, 97%);
-  --card: hsl(200, 19%, 29%);
-  --card-foreground: hsl(180, 43%, 97%);
-  --popover: hsl(200, 45%, 16%);
-  --popover-foreground: hsl(180, 43%, 97%);
-  --primary: hsl(188, 54%, 58%);
-  --primary-foreground: hsl(200, 45%, 16%);
-  --secondary: hsl(200, 19%, 29%);
-  --secondary-foreground: hsl(180, 43%, 97%);
-  --muted: hsl(200, 19%, 29%);
-  --muted-foreground: hsl(213, 20%, 73%);
-  --accent: hsl(188, 32%, 56%);
-  --accent-foreground: hsl(200, 45%, 16%);
-  --destructive: hsl(356, 90%, 54%);
-  --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(200, 19%, 29%);
-  --input: hsl(200, 19%, 29%);
-  --ring: hsl(188, 54%, 58%);
+  /* Dark mode using approved palette */
+  --background: rgb(var(--dark-teal));
+  --foreground: rgb(var(--bluish-white));
+  --card: rgb(var(--dark-graphite-gray));
+  --card-foreground: rgb(var(--bluish-white));
+  --popover: rgb(var(--dark-teal));
+  --popover-foreground: rgb(var(--bluish-white));
+  --primary: rgb(var(--vibrant-turquoise));
+  --primary-foreground: rgb(var(--dark-teal));
+  --secondary: rgb(var(--dark-graphite-gray));
+  --secondary-foreground: rgb(var(--bluish-white));
+  --muted: rgb(var(--dark-graphite-gray));
+  --muted-foreground: rgb(var(--light-bluish-gray));
+  --accent: rgb(var(--soft-blue-green));
+  --accent-foreground: rgb(var(--dark-teal));
+  --destructive: rgb(220, 38, 38);
+  --destructive-foreground: rgb(var(--bluish-white));
+  --border: rgb(var(--dark-graphite-gray));
+  --input: rgb(var(--dark-graphite-gray));
+  --ring: rgb(var(--vibrant-turquoise));
 }
 
 @layer base {
@@ -110,55 +112,63 @@
   }
   
   .text-dark-teal {
-    color: hsl(var(--dark-teal));
+    color: rgb(var(--dark-teal));
   }
   
   .bg-dark-teal {
-    background-color: hsl(var(--dark-teal));
+    background-color: rgb(var(--dark-teal));
   }
   
   .text-vibrant-turquoise {
-    color: hsl(var(--vibrant-turquoise));
+    color: rgb(var(--vibrant-turquoise));
   }
   
   .bg-vibrant-turquoise {
-    background-color: hsl(var(--vibrant-turquoise));
+    background-color: rgb(var(--vibrant-turquoise));
   }
   
   .text-soft-blue-green {
-    color: hsl(var(--soft-blue-green));
+    color: rgb(var(--soft-blue-green));
   }
   
   .bg-soft-blue-green {
-    background-color: hsl(var(--soft-blue-green));
+    background-color: rgb(var(--soft-blue-green));
   }
   
   .text-light-blue-pastel {
-    color: hsl(var(--light-blue-pastel));
+    color: rgb(var(--light-blue-pastel));
   }
   
   .bg-light-blue-pastel {
-    background-color: hsl(var(--light-blue-pastel));
+    background-color: rgb(var(--light-blue-pastel));
   }
   
   .bg-bluish-white {
-    background-color: hsl(var(--bluish-white));
+    background-color: rgb(var(--bluish-white));
   }
   
   .text-light-bluish-gray {
-    color: hsl(var(--light-bluish-gray));
+    color: rgb(var(--light-bluish-gray));
   }
   
   .bg-light-bluish-gray {
-    background-color: hsl(var(--light-bluish-gray));
+    background-color: rgb(var(--light-bluish-gray));
   }
   
   .text-dark-graphite-gray {
-    color: hsl(var(--dark-graphite-gray));
+    color: rgb(var(--dark-graphite-gray));
   }
   
   .bg-dark-graphite-gray {
-    background-color: hsl(var(--dark-graphite-gray));
+    background-color: rgb(var(--dark-graphite-gray));
+  }
+  
+  .text-support-light-gray {
+    color: rgb(var(--support-light-gray));
+  }
+  
+  .bg-support-light-gray {
+    background-color: rgb(var(--support-light-gray));
   }
 }
 
