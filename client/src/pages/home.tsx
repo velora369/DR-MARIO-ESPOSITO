@@ -425,7 +425,7 @@ const Home = () => {
                   <FaWhatsapp className="text-white h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
+                  <h4 className="font-semibold text-[#59bfcd]">WhatsApp</h4>
                   <p className="text-sm text-muted-foreground">Clique para conversar</p>
                 </div>
               </a>
