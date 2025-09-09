@@ -475,25 +475,25 @@ const Home = () => {
               </h3>
               <div className="flex-1">
                 <Card className="shadow-lg border-0 h-full">
-                  <CardContent className="p-6 h-full flex flex-col justify-center">
-                    <div className="space-y-4">
-                      <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-weekday">
+                  <CardContent className="p-8 h-full flex flex-col justify-center">
+                    <div className="space-y-6">
+                      <div className="flex justify-between items-center py-4 border-b border-gray-100" data-testid="hours-weekday">
                         <div className="flex items-center space-x-3">
-                          <span className="font-semibold text-dark-teal">Segunda à Sexta</span>
+                          <span className="font-semibold text-dark-teal text-lg">Segunda à Sexta</span>
                         </div>
-                        <span className="text-vibrant-turquoise font-medium">08:00 - 18:00</span>
+                        <span className="text-vibrant-turquoise font-medium text-lg">08:00 - 18:00</span>
                       </div>
-                      <div className="flex justify-between items-center py-2 border-b border-gray-100 mt-[43px] mb-[43px]" data-testid="hours-saturday">
+                      <div className="flex justify-between items-center py-4 border-b border-gray-100" data-testid="hours-saturday">
                         <div className="flex items-center space-x-3">
-                          <span className="font-semibold text-dark-teal">Sábado</span>
+                          <span className="font-semibold text-dark-teal text-lg">Sábado</span>
                         </div>
-                        <span className="text-vibrant-turquoise font-medium">08:00 - 12:00</span>
+                        <span className="text-vibrant-turquoise font-medium text-lg">08:00 - 12:00</span>
                       </div>
-                      <div className="flex justify-between items-center py-2" data-testid="hours-sunday">
+                      <div className="flex justify-between items-center py-4" data-testid="hours-sunday">
                         <div className="flex items-center space-x-3">
-                          <span className="font-semibold text-dark-teal">Domingo</span>
+                          <span className="font-semibold text-dark-teal text-lg">Domingo</span>
                         </div>
-                        <span className="text-muted-foreground font-medium">Fechado</span>
+                        <span className="text-muted-foreground font-medium text-lg">Fechado</span>
                       </div>
                       
                     </div>

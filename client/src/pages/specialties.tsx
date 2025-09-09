@@ -75,6 +75,20 @@ const Specialties = () => {
     <div>
       <section className="py-20" data-testid="section-specialties">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Botão Voltar */}
+          <div className="mb-8">
+            <Link href="/">
+              <Button
+                variant="ghost"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-vibrant-turquoise transition-colors"
+                data-testid="button-back"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span>Voltar</span>
+              </Button>
+            </Link>
+          </div>
+          
           <div className="text-center space-y-6 mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-specialties">
               Especialidades
