@@ -47,13 +47,20 @@ const Header = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const navigation = [
-    { name: "Início", href: "/" },
-    { name: "Sobre", href: "/sobre" },
-    { name: "Especialidades", href: "/especialidades" },
-    { name: "Procedimentos", href: "/procedimentos" },
-    { name: "FAQ", href: "/faq" },
-    { name: "Contato", href: "/contato" },
+    { name: "Início", href: "/", action: null },
+    { name: "Sobre", href: "/sobre", action: null },
+    { name: "Especialidades", href: "/especialidades", action: null },
+    { name: "Procedimentos", href: "/procedimentos", action: null },
+    { name: "FAQ", href: "/faq", action: null },
+    { name: "Contato", href: "#", action: () => scrollToSection("contato") },
   ];
 
   const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20com%20o%20Dr.%20Mário%20Espósito";
@@ -81,18 +88,33 @@ const Header = () => {
           {/* Desktop Navigation Menu - centralizado */}
           <div className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`text-sm font-medium transition-colors ${
-                  location === item.href
-                    ? "text-dark-teal"
-                    : "text-muted-foreground hover:text-vibrant-turquoise"
-                }`}
-                data-testid={`link-nav-${item.name.toLowerCase()}`}
-              >
-                {item.name}
-              </Link>
+              item.action ? (
+                <button
+                  key={item.name}
+                  onClick={item.action}
+                  className={`text-sm font-medium transition-colors ${
+                    location === item.href
+                      ? "text-dark-teal"
+                      : "text-muted-foreground hover:text-vibrant-turquoise"
+                  }`}
+                  data-testid={`link-nav-${item.name.toLowerCase()}`}
+                >
+                  {item.name}
+                </button>
+              ) : (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`text-sm font-medium transition-colors ${
+                    location === item.href
+                      ? "text-dark-teal"
+                      : "text-muted-foreground hover:text-vibrant-turquoise"
+                  }`}
+                  data-testid={`link-nav-${item.name.toLowerCase()}`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
 
@@ -108,18 +130,33 @@ const Header = () => {
               <SheetContent side="right" className="w-[300px]">
                 <div className="flex flex-col space-y-4 mt-6">
                   {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className={`block px-3 py-2 text-base font-medium transition-colors ${
-                        location === item.href
-                          ? "text-dark-teal"
-                          : "text-muted-foreground hover:text-vibrant-turquoise"
-                      }`}
-                      data-testid={`link-menu-${item.name.toLowerCase()}`}
-                    >
-                      {item.name}
-                    </Link>
+                    item.action ? (
+                      <button
+                        key={item.name}
+                        onClick={item.action}
+                        className={`block px-3 py-2 text-base font-medium transition-colors text-left ${
+                          location === item.href
+                            ? "text-dark-teal"
+                            : "text-muted-foreground hover:text-vibrant-turquoise"
+                        }`}
+                        data-testid={`link-menu-${item.name.toLowerCase()}`}
+                      >
+                        {item.name}
+                      </button>
+                    ) : (
+                      <Link
+                        key={item.name}
+                        href={item.href}
+                        className={`block px-3 py-2 text-base font-medium transition-colors ${
+                          location === item.href
+                            ? "text-dark-teal"
+                            : "text-muted-foreground hover:text-vibrant-turquoise"
+                        }`}
+                        data-testid={`link-menu-${item.name.toLowerCase()}`}
+                      >
+                        {item.name}
+                      </Link>
+                    )
                   ))}
                   <div className="border-t border-border pt-4 mt-6 space-y-3">
                     <a

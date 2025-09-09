@@ -70,13 +70,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/contato" 
-                  className="text-light-bluish-gray hover:text-vibrant-turquoise transition-colors"
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById("contato");
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="text-light-bluish-gray hover:text-vibrant-turquoise transition-colors text-left"
                   data-testid="link-footer-contact"
                 >
                   Contato
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
