@@ -21,17 +21,17 @@ const SpecialtyCard = ({
 }: SpecialtyCardProps) => {
   return (
     <Card className="specialty-card bg-card shadow-lg text-center h-full transition-all duration-300 hover:shadow-xl group cursor-pointer" data-testid={testId}>
-      <CardContent className="p-8">
+      <CardContent className="p-8 h-full flex flex-col">
         <div className={`w-16 h-16 ${bgColor} rounded-full flex items-center justify-center mx-auto mb-6 transition-all duration-300`}>
           {icon}
         </div>
         <h3 className="text-xl font-bold text-dark-teal mb-4">{title}</h3>
-        <p className="text-muted-foreground mb-6 leading-relaxed">
+        <p className="text-muted-foreground mb-6 leading-relaxed flex-grow">
           {description}
         </p>
         <Button 
           variant="ghost" 
-          className="text-primary hover:text-vibrant-turquoise font-semibold p-0 transition-all duration-300 hover:underline hover:shadow-none focus:shadow-none focus:outline-none hover:bg-transparent focus:bg-transparent active:bg-transparent"
+          className="text-primary hover:text-vibrant-turquoise font-semibold p-0 transition-all duration-300 hover:underline hover:shadow-none focus:shadow-none focus:outline-none hover:bg-transparent focus:bg-transparent active:bg-transparent mt-auto"
           onClick={onLearnMore}
           data-testid={`button-learn-more-${title.toLowerCase().replace(/\s+/g, '-')}`}
         >
