@@ -426,7 +426,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#59bfcd]">WhatsApp</h4>
-                  <p className="text-sm text-muted-foreground">Clique para conversar</p>
+                  <p className="text-sm text-[#59bfcd]">Clique para conversar</p>
                 </div>
               </a>
 
