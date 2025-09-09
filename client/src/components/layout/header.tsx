@@ -8,6 +8,8 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const Header = () => {
   const [location] = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isUserMoving, setIsUserMoving] = useState(false);
+  const [showDoctorName, setShowDoctorName] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +18,33 @@ const Header = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    let moveTimeout: NodeJS.Timeout;
+
+    const handleUserMovement = () => {
+      setIsUserMoving(true);
+      setShowDoctorName(false);
+      
+      clearTimeout(moveTimeout);
+      moveTimeout = setTimeout(() => {
+        setIsUserMoving(false);
+        setShowDoctorName(true);
+      }, 1500); // Nome reaparece após 1.5s sem movimento
+    };
+
+    // Detectar movimento do mouse e scroll
+    window.addEventListener("mousemove", handleUserMovement);
+    window.addEventListener("scroll", handleUserMovement);
+    window.addEventListener("touchmove", handleUserMovement);
+
+    return () => {
+      window.removeEventListener("mousemove", handleUserMovement);
+      window.removeEventListener("scroll", handleUserMovement);
+      window.removeEventListener("touchmove", handleUserMovement);
+      clearTimeout(moveTimeout);
+    };
   }, []);
 
   const navigation = [
@@ -37,9 +66,33 @@ const Header = () => {
           <Link href="/" className="flex items-center" data-testid="link-home">
             <div className="text-2xl font-bold">
               <span className="text-dark-teal">Dr.</span>
-              <span className="text-vibrant-turquoise ml-1">Mário Espósito</span>
+              <span 
+                className={`text-vibrant-turquoise ml-1 transition-all duration-300 ease-in-out ${
+                  showDoctorName ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-2'
+                }`}
+              >
+                Mário Espósito
+              </span>
             </div>
           </Link>
+
+          {/* Desktop Navigation Menu */}
+          <div className="hidden lg:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className={`text-sm font-medium transition-colors ${
+                  location === item.href
+                    ? "text-dark-teal"
+                    : "text-muted-foreground hover:text-vibrant-turquoise"
+                }`}
+                data-testid={`link-nav-${item.name.toLowerCase()}`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
 
           {/* Hamburger menu - sempre visível */}
           <div>
