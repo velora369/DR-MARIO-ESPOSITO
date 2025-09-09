@@ -442,7 +442,7 @@ const Home = () => {
                   <FaInstagram className="text-white h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-dark-teal">Instagram</h4>
+                  <h4 className="font-semibold text-[#6faab4]">Instagram</h4>
                   <p className="text-sm text-muted-foreground">@dr_marioesposito</p>
                 </div>
               </a>
