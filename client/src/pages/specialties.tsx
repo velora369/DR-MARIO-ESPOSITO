@@ -80,7 +80,7 @@ const Specialties = () => {
             <Link href="/">
               <Button
                 variant="ghost"
-                className="flex items-center space-x-2 text-muted-foreground hover:text-vibrant-turquoise transition-colors"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-vibrant-turquoise transition-colors bg-transparent hover:bg-transparent"
                 data-testid="button-back"
               >
                 <ArrowLeft className="h-4 w-4" />
