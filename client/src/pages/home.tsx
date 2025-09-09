@@ -293,7 +293,7 @@ const Home = () => {
         </div>
       </section>
       {/* Contact Section */}
-      <section className="py-20 bg-muted" data-testid="section-contact">
+      <section id="contato" className="py-20 bg-muted" data-testid="section-contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-contact">
@@ -304,65 +304,67 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
-                  Informações de Contato
-                </h3>
-                <div className="space-y-6">
-                  {/* WhatsApp */}
-                  <a
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer bg-[#2b2c3700]"
-                    data-testid="contact-whatsapp"
-                  >
-                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
-                      <FaWhatsapp className="text-white h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
-                    </div>
-                  </a>
-
-                  {/* Instagram */}
-                  <a
-                    href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer"
-                    data-testid="contact-instagram"
-                  >
-                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                      <FaInstagram className="text-white h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-dark-teal">Instagram</h4>
-                    </div>
-                  </a>
-
-                  {/* Address */}
-                  <div className="flex items-start space-x-4" data-testid="contact-address">
-                    <div className="w-12 h-12 bg-soft-blue-green rounded-full flex items-center justify-center">
-                      <MapPin className="text-white h-6 w-6" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-dark-teal">Endereço</h4>
-                      <p className="text-muted-foreground">
-                        <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="hover:text-primary">
-                          Centro Médico Hospital Otorrino<br />
-                          R. Ten. Eulálio Guerra, 50<br />
-                          Araes, Cuiabá - MT, 78005-510
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
+                Informações de Contato
+              </h3>
+              
+              {/* WhatsApp */}
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 hover:bg-bluish-white/60 p-4 rounded-lg transition-colors group"
+                data-testid="contact-whatsapp"
+              >
+                <div className="w-10 h-10 bg-vibrant-turquoise rounded-full flex items-center justify-center group-hover:bg-soft-blue-green transition-colors">
+                  <FaWhatsapp className="text-white h-5 w-5" />
                 </div>
-              </div>
+                <div>
+                  <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
+                  <p className="text-sm text-muted-foreground">Clique para conversar</p>
+                </div>
+              </a>
+
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-4 hover:bg-bluish-white/60 p-4 rounded-lg transition-colors group"
+                data-testid="contact-instagram"
+              >
+                <div className="w-10 h-10 bg-soft-blue-green rounded-full flex items-center justify-center group-hover:bg-vibrant-turquoise transition-colors">
+                  <FaInstagram className="text-white h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-dark-teal">Instagram</h4>
+                  <p className="text-sm text-muted-foreground">@dr_marioesposito</p>
+                </div>
+              </a>
+
+              {/* Address */}
+              <a
+                href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start space-x-4 hover:bg-bluish-white/60 p-4 rounded-lg transition-colors group"
+                data-testid="contact-address"
+              >
+                <div className="w-10 h-10 bg-dark-teal rounded-full flex items-center justify-center group-hover:bg-dark-graphite-gray transition-colors">
+                  <MapPin className="text-white h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-semibold text-dark-teal">Endereço</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Centro Médico Hospital Otorrino<br />
+                    R. Ten. Eulálio Guerra, 50<br />
+                    Araes, Cuiabá - MT, 78005-510
+                  </p>
+                </div>
+              </a>
             </div>
 
             {/* Hours and Quick Contact */}
@@ -372,25 +374,34 @@ const Home = () => {
                 <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-hours">
                   Horário de Atendimento
                 </h3>
-                <Card className="shadow-lg">
+                <Card className="shadow-lg border-0">
                   <CardContent className="p-6">
-                    <div className="space-y-3">
-                      <div className="flex justify-between items-center" data-testid="hours-weekday">
-                        <span className="font-medium text-dark-teal">Segunda à Sexta</span>
-                        <span className="text-muted-foreground">08:00 - 18:00</span>
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-weekday">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                          <span className="font-semibold text-dark-teal">Segunda à Sexta</span>
+                        </div>
+                        <span className="text-vibrant-turquoise font-medium">08:00 - 18:00</span>
                       </div>
-                      <div className="flex justify-between items-center" data-testid="hours-saturday">
-                        <span className="font-medium text-dark-teal">Sábado</span>
-                        <span className="text-muted-foreground">08:00 - 12:00</span>
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-saturday">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                          <span className="font-semibold text-dark-teal">Sábado</span>
+                        </div>
+                        <span className="text-vibrant-turquoise font-medium">08:00 - 12:00</span>
                       </div>
-                      <div className="flex justify-between items-center" data-testid="hours-sunday">
-                        <span className="font-medium text-dark-teal">Domingo</span>
-                        <span className="text-muted-foreground">Fechado</span>
+                      <div className="flex justify-between items-center py-2" data-testid="hours-sunday">
+                        <div className="flex items-center space-x-3">
+                          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                          <span className="font-semibold text-dark-teal">Domingo</span>
+                        </div>
+                        <span className="text-muted-foreground font-medium">Fechado</span>
                       </div>
                     </div>
-                    <div className="mt-4 pt-4 border-t border-border">
-                      <p className="text-sm text-muted-foreground" data-testid="hours-note">
-                        * Atendimento mediante agendamento prévio
+                    <div className="mt-6 pt-4 border-t border-vibrant-turquoise/20 bg-light-blue-pastel/30 rounded-xl p-4">
+                      <p className="text-sm text-dark-teal font-medium text-center" data-testid="hours-note">
+                        Atendimento mediante agendamento prévio
                       </p>
                     </div>
                   </CardContent>
@@ -414,6 +425,29 @@ const Home = () => {
                   Agendar via WhatsApp
                 </a>
               </div>
+            </div>
+
+            {/* Map Section */}
+            <div>
+              <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-location">
+                Localização
+              </h3>
+              <Card className="shadow-lg border-0">
+                <CardContent className="p-4">
+                  <div className="w-full h-80 rounded-xl overflow-hidden" data-testid="map-interactive">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.8282!2d-56.09456!3d-15.60181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939a0eb64e7f8d77%3A0x123456789abcdef!2sR.%20Ten.%20Eul%C3%A1lio%20Guerra%2C%2050%20-%20Araes%2C%20Cuiab%C3%A1%20-%20MT%2C%2078005-510!5e0!3m2!1sen!2sbr!4v1625680000000!5m2!1sen!2sbr"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                      title="Centro Médico Hospital Otorrino - Dr. Mário Espósito"
+                    ></iframe>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
