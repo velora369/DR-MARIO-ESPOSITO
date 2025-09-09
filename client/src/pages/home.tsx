@@ -73,17 +73,17 @@ const Home = () => {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg h-14 min-w-[280px] whitespace-nowrap"
+                  className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center transition-all duration-300 transform hover:scale-105 hover:shadow-lg h-14 w-full sm:min-w-[280px] whitespace-nowrap"
                   data-testid="button-hero-whatsapp"
                 >
                   <FaWhatsapp className="mr-3 h-6 w-6" />
                   Agende sua consulta
                 </a>
-                <Link href="/especialidades">
+                <Link href="/especialidades" className="w-full sm:min-w-[280px]">
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="bg-bluish-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-bluish-white/20 hover:bg-bluish-white/20 transition-all duration-300 transform hover:scale-105 hover:shadow-lg h-14 min-w-[280px] flex items-center justify-center whitespace-nowrap"
+                    className="bg-bluish-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-semibold text-lg border-bluish-white/20 hover:bg-bluish-white/20 transition-all duration-300 transform hover:scale-105 hover:shadow-lg h-14 w-full flex items-center justify-center whitespace-nowrap"
                     data-testid="button-hero-specialties"
                   >
                     Conheça as especialidades
