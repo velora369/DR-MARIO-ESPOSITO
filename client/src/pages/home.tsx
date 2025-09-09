@@ -32,24 +32,130 @@ const Home = () => {
     ['rinoplastia', 'botox', 'ronco'].includes(p.id)
   );
 
-  const faqPreviewItems = [
+  const faqItems = [
     {
-      id: "convenios-preview",
+      id: "convenios",
       question: "Quais convênios médicos o Dr. Mário Espósito atende?",
-      answer: "Atualmente atendemos Unimed e Pax Nacional Prever. Para outros convênios ou consultas particulares, entre em contato.",
+      answer: (
+        <div className="space-y-2">
+          <p>Atualmente o Dr. Mário Espósito atende os seguintes convênios:</p>
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li><strong>Unimed</strong></li>
+            <li><strong>Pax Nacional Prever</strong></li>
+          </ul>
+          <p className="mt-3 text-sm">
+            Para consultas particulares ou outros convênios, entre em contato para mais informações.
+          </p>
+        </div>
+      ),
       icon: <CreditCard className="text-white h-5 w-5" />
     },
     {
-      id: "agendamento-preview", 
+      id: "agendamento",
       question: "Como agendar uma consulta?",
-      answer: "Você pode agendar pelo WhatsApp (65) 99624-3541 ou presencialmente no consultório.",
+      answer: (
+        <div className="space-y-2">
+          <p>Você pode agendar sua consulta de três formas fáceis:</p>
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li><strong>WhatsApp:</strong> (65) 99624-3541 - Forma mais rápida e prática</li>
+            <li><strong>Presencialmente:</strong> No consultório durante o horário de atendimento</li>
+          </ul>
+          <p className="mt-3 text-sm">
+            Recomendamos o agendamento com antecedência, especialmente para procedimentos cirúrgicos.
+          </p>
+        </div>
+      ),
       icon: <Calendar className="text-white h-5 w-5" />
     },
     {
-      id: "primeira-consulta-preview",
+      id: "horarios",
+      question: "Quais são os horários de atendimento?",
+      answer: (
+        <div className="space-y-2">
+          <p>O consultório funciona nos seguintes horários:</p>
+          <div className="space-y-1 ml-4">
+            <p><strong>Segunda à Sexta:</strong> 08:00 às 18:00</p>
+            <p><strong>Sábado:</strong> 08:00 às 12:00</p>
+            <p><strong>Domingo:</strong> Fechado</p>
+          </div>
+          <p className="mt-3 text-sm font-medium">
+            * Atendimento mediante agendamento prévio
+          </p>
+        </div>
+      ),
+      icon: <Clock className="text-white h-5 w-5" />
+    },
+    {
+      id: "localizacao",
+      question: "Onde o Dr. Mário atende?",
+      answer: (
+        <div className="space-y-2">
+          <p>O consultório está localizado em:</p>
+          <div className="ml-4">
+            <p><strong>Centro Médico Hospital Otorrino</strong></p>
+            <p>R. Ten. Eulálio Guerra, 50</p>
+            <p>Araes, Cuiabá - MT, 78005-510</p>
+          </div>
+          <p className="mt-3">
+            O consultório conta com estacionamento próprio e fica próximo ao centro da cidade, 
+            facilitando o acesso por transporte público e particular.
+          </p>
+        </div>
+      ),
+      icon: <MapPin className="text-white h-5 w-5" />
+    },
+    {
+      id: "cobertura-procedimentos",
+      question: "Os procedimentos são cobertos por convênio ou apenas particulares?",
+      answer: (
+        <div className="space-y-2">
+          <p>A cobertura varia conforme o tipo de procedimento:</p>
+          <div className="space-y-2 ml-4">
+            <div>
+              <p><strong>Cobertos por convênio:</strong></p>
+              <ul className="list-disc list-inside ml-4 text-sm">
+                <li>Consultas otorrinolaringológicas</li>
+                <li>Tratamento de rinite, sinusite e outras patologias</li>
+                <li>Cirurgias funcionais (septoplastia, adenoamigdalectomia)</li>
+                <li>Testes alérgicos e imunoterapia</li>
+              </ul>
+            </div>
+            <div>
+              <p><strong>Particulares:</strong></p>
+              <ul className="list-disc list-inside ml-4 text-sm">
+                <li>Cirurgias plásticas faciais</li>
+                <li>Procedimentos estéticos (botox, preenchimentos)</li>
+                <li>Bichectomia e procedimentos cosméticos</li>
+              </ul>
+            </div>
+          </div>
+          <p className="mt-3 text-sm">
+            Entre em contato para esclarecer a cobertura do seu procedimento específico.
+          </p>
+        </div>
+      ),
+      icon: <CreditCard className="text-white h-5 w-5" />
+    },
+    {
+      id: "primeira-consulta",
       question: "O que levar na primeira consulta?",
-      answer: "Traga documento de identidade, CPF, cartão do convênio, exames anteriores e lista de medicamentos em uso.",
-      icon: <HelpCircle className="text-white h-5 w-5" />
+      answer: (
+        <div className="space-y-2">
+          <p>Para sua primeira consulta, traga:</p>
+          <ul className="list-disc list-inside ml-4 space-y-1">
+            <li>Documento de identidade (RG ou CNH)</li>
+            <li>CPF</li>
+            <li>Cartão do convênio (se aplicável)</li>
+            <li>Exames anteriores relacionados ao problema</li>
+            <li>Lista de medicamentos em uso</li>
+            <li>Histórico médico relevante</li>
+          </ul>
+          <p className="mt-3 text-sm">
+            Chegue com 15 minutos de antecedência para realizar o cadastro.
+          </p>
+        </div>
+      ),
+      icon: <Phone className="text-white h-5 w-5" />
     }
   ];
 
@@ -253,42 +359,38 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* FAQ Preview */}
-      <section className="py-20 bg-bluish-white" data-testid="section-faq-preview">
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 bg-bluish-white" data-testid="section-faq">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-faq-preview">
+            <h2 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-faq">
               Perguntas Frequentes
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="description-faq-preview">
-              Encontre respostas rápidas para as principais dúvidas sobre nossos atendimentos
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="description-faq">
+              Encontre respostas para as dúvidas mais comuns sobre consultas, procedimentos e atendimento
             </p>
           </div>
 
-          <FAQAccordion items={faqPreviewItems} className="mb-12" />
+          <FAQAccordion items={faqItems} className="mb-16" />
 
-          <div className="text-center flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/faq" className="flex-1 max-w-xs">
-              <Button 
-                size="lg"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent w-full min-h-[60px] flex items-center justify-center"
-                data-testid="button-all-faq"
-              >
-                Ver todas as perguntas
-              </Button>
-            </Link>
-            <div className="flex-1 max-w-xs">
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg w-full min-h-[60px] flex items-center justify-center whitespace-nowrap"
-                data-testid="button-faq-whatsapp"
-              >
-                <FaWhatsapp className="mr-3 h-5 w-5 flex-shrink-0" />
-                <span className="whitespace-nowrap">Tirar dúvidas no WhatsApp</span>
-              </a>
-            </div>
+          {/* CTA Section */}
+          <div className="bg-light-blue-pastel/20 p-8 rounded-2xl text-center" data-testid="faq-cta">
+            <h3 className="text-2xl font-bold text-dark-teal mb-4">
+              Ainda tem dúvidas?
+            </h3>
+            <p className="text-muted-foreground mb-6 text-lg">
+              Fale diretamente pelo WhatsApp e tire todas as suas perguntas.
+            </p>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg inline-flex items-center"
+              data-testid="button-faq-whatsapp"
+            >
+              <FaWhatsapp className="mr-3 h-5 w-5" />
+              Falar pelo WhatsApp
+            </a>
           </div>
         </div>
       </section>
