@@ -94,8 +94,8 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Hamburger menu - sempre visível */}
-          <div>
+          {/* Hamburger menu - visível apenas em mobile */}
+          <div className="lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="sm" data-testid="button-hamburger-menu">
