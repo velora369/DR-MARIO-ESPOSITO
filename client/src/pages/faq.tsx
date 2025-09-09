@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { MessageCircle, Calendar, Clock, MapPin, CreditCard, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FAQAccordion from "@/components/common/faq-accordion";
 
 const FAQ = () => {
   const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20tenho%20algumas%20dúvidas%20sobre%20os%20atendimentos%20do%20Dr.%20Mário%20Espósito";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const faqItems = [
     {

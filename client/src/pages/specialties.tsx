@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Stethoscope, Syringe, Sparkles, Wind, Check } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
@@ -6,6 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Specialties = () => {
   const whatsappLink = "https://api.whatsapp.com/send?phone=5565996243541&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20as%20especialidades%20do%20Dr.%20Mário%20Espósito";
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const specialties = [
     {
