@@ -406,32 +406,33 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-12 items-stretch">
             {/* Contact Information */}
-            <div className="space-y-6">
+            <div className="flex flex-col h-full">
               <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
                 Informações de Contato
               </h3>
               
-              {/* WhatsApp */}
-              <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-4 hover:bg-bluish-white/60 p-4 rounded-lg transition-colors group"
-                data-testid="contact-whatsapp"
-              >
-                <div className="w-10 h-10 bg-vibrant-turquoise rounded-full flex items-center justify-center group-hover:bg-soft-blue-green transition-colors">
-                  <FaWhatsapp className="text-white h-5 w-5" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-[#59bfcd]">WhatsApp</h4>
-                  <p className="text-sm text-[#59bfcd]">Clique para conversar</p>
-                </div>
-              </a>
+              <div className="flex-1 space-y-6">
+                {/* WhatsApp */}
+                <a
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-4 hover:bg-bluish-white/60 p-4 rounded-lg transition-colors group"
+                  data-testid="contact-whatsapp"
+                >
+                  <div className="w-10 h-10 bg-vibrant-turquoise rounded-full flex items-center justify-center group-hover:bg-soft-blue-green transition-colors">
+                    <FaWhatsapp className="text-white h-5 w-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
+                    <p className="text-sm text-muted-foreground">Clique para conversar</p>
+                  </div>
+                </a>
 
-              {/* Instagram */}
-              <a
+                {/* Instagram */}
+                <a
                 href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 rel="noopener noreferrer"
@@ -467,17 +468,17 @@ const Home = () => {
                   </p>
                 </div>
               </a>
+              </div>
             </div>
 
-            {/* Hours and Quick Contact */}
-            <div className="space-y-8">
-              {/* Opening Hours */}
-              <div>
-                <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-hours">
-                  Horário de Atendimento
-                </h3>
-                <Card className="shadow-lg border-0">
-                  <CardContent className="p-6">
+            {/* Hours */}
+            <div className="flex flex-col h-full">
+              <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-hours">
+                Horário de Atendimento
+              </h3>
+              <div className="flex-1">
+                <Card className="shadow-lg border-0 h-full">
+                  <CardContent className="p-6 h-full flex flex-col justify-center">
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-weekday">
                         <div className="flex items-center space-x-3">
@@ -497,22 +498,26 @@ const Home = () => {
                         </div>
                         <span className="text-muted-foreground font-medium">Fechado</span>
                       </div>
+                      <div className="mt-6 pt-4 border-t border-vibrant-turquoise/20 bg-light-blue-pastel/30 rounded-xl p-4">
+                        <p className="text-sm text-dark-teal font-medium text-center" data-testid="hours-note">
+                          Atendimento mediante agendamento prévio
+                        </p>
+                      </div>
                     </div>
-                    
                   </CardContent>
                 </Card>
               </div>
-
             </div>
 
             {/* Map Section */}
-            <div>
+            <div className="flex flex-col h-full">
               <h3 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-location">
                 Localização
               </h3>
-              <Card className="shadow-lg border-0">
-                <CardContent className="p-4">
-                  <div className="w-full h-80 rounded-xl overflow-hidden" data-testid="map-interactive">
+              <div className="flex-1">
+                <Card className="shadow-lg border-0 h-full">
+                  <CardContent className="p-4 h-full">
+                    <div className="w-full h-full rounded-xl overflow-hidden" style={{ minHeight: '320px' }} data-testid="map-interactive">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3841.8282!2d-56.09456!3d-15.60181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939a0eb64e7f8d77%3A0x123456789abcdef!2sR.%20Ten.%20Eul%C3%A1lio%20Guerra%2C%2050%20-%20Araes%2C%20Cuiab%C3%A1%20-%20MT%2C%2078005-510!5e0!3m2!1sen!2sbr!4v1625680000000!5m2!1sen!2sbr"
                       width="100%"
@@ -523,9 +528,10 @@ const Home = () => {
                       referrerPolicy="no-referrer-when-downgrade"
                       title="Centro Médico Hospital Otorrino - Dr. Mário Espósito"
                     ></iframe>
-                  </div>
-                </CardContent>
-              </Card>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
