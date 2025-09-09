@@ -64,13 +64,13 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center" data-testid="link-home">
-            <div className="text-2xl font-bold">
+            <div 
+              className={`text-2xl font-bold transition-all duration-300 ease-in-out ${
+                showDoctorName ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-2'
+              }`}
+            >
               <span className="text-dark-teal">Dr.</span>
-              <span 
-                className={`text-vibrant-turquoise ml-1 transition-all duration-300 ease-in-out ${
-                  showDoctorName ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-2'
-                }`}
-              >
+              <span className="text-vibrant-turquoise ml-1">
                 Mário Espósito
               </span>
             </div>
