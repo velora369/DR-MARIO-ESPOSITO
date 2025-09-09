@@ -78,9 +78,6 @@ const Home = () => {
             <p><strong>Sábado:</strong> 08:00 às 12:00</p>
             <p><strong>Domingo:</strong> Fechado</p>
           </div>
-          <p className="mt-3 text-sm font-medium">
-            * Atendimento mediante agendamento prévio
-          </p>
         </div>
       ),
       icon: <Clock className="text-white h-5 w-5" />
@@ -426,7 +423,7 @@ const Home = () => {
                     <FaWhatsapp className="text-white h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-dark-teal">WhatsApp</h4>
+                    <h4 className="font-semibold text-[#59bfcd]">WhatsApp</h4>
                     <p className="text-sm text-muted-foreground">Clique para conversar</p>
                   </div>
                 </a>
