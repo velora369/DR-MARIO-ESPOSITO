@@ -124,7 +124,7 @@ const Specialties = () => {
                   <Link href="/procedimentos">
                     <Button 
                       variant="ghost" 
-                      className="text-primary hover:text-accent font-semibold p-0"
+                      className="text-primary hover:text-accent font-semibold p-0 bg-transparent hover:bg-transparent"
                       data-testid={`button-procedures-${specialty.id}`}
                     >
                       Ver todos os procedimentos →
