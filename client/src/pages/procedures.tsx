@@ -1,7 +1,9 @@
 import { useState, useMemo, useEffect } from "react";
-import { Search } from "lucide-react";
+import { Search, ArrowLeft } from "lucide-react";
+import { Link } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
 import ProcedureCard from "@/components/common/procedure-card";
 import ProcedureModal from "@/components/common/procedure-modal";
 import { proceduresData, getCategoryName, type Procedure } from "@/lib/procedures-data";
@@ -41,6 +43,20 @@ const Procedures = () => {
     <div>
       <section className="py-20" data-testid="section-procedures">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Botão Voltar no topo */}
+          <div className="mb-8">
+            <Link href="/">
+              <Button
+                variant="ghost"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-vibrant-turquoise transition-colors"
+                data-testid="button-back-top"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span>Voltar</span>
+              </Button>
+            </Link>
+          </div>
+          
           <div className="text-center space-y-6 mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold text-dark-teal" data-testid="title-procedures">
               Procedimentos
@@ -97,6 +113,20 @@ const Procedures = () => {
               <p className="text-muted-foreground">Tente usar outros termos de busca ou limpe os filtros</p>
             </div>
           )}
+
+          {/* Botão Voltar no final */}
+          <div className="text-center mt-16">
+            <Link href="/">
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent flex items-center space-x-2 mx-auto"
+                data-testid="button-back-bottom"
+              >
+                <ArrowLeft className="h-5 w-5" />
+                <span>Voltar à página inicial</span>
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
