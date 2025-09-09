@@ -483,7 +483,7 @@ const Home = () => {
                         </div>
                         <span className="text-vibrant-turquoise font-medium">08:00 - 18:00</span>
                       </div>
-                      <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-saturday">
+                      <div className="flex justify-between items-center py-2 border-b border-gray-100 mt-[43px] mb-[43px]" data-testid="hours-saturday">
                         <div className="flex items-center space-x-3">
                           <span className="font-semibold text-dark-teal">Sábado</span>
                         </div>

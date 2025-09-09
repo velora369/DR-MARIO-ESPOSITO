@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Stethoscope, Syringe, Sparkles, Wind, Check } from "lucide-react";
+import { Stethoscope, Syringe, Sparkles, Wind, Check, ArrowLeft } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
