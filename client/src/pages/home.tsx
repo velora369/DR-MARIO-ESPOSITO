@@ -443,7 +443,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-[#6faab4]">Instagram</h4>
-                  <p className="text-sm text-muted-foreground">@dr_marioesposito</p>
+                  <p className="text-sm text-[#6fabb4]">@dr_marioesposito</p>
                 </div>
               </a>
 
