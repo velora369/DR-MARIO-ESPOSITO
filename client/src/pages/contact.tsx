@@ -101,103 +101,49 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-dark-teal mb-8" data-testid="title-contact-info">
+                <h2 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
                   Informações de Contato
                 </h2>
-                <div className="grid gap-6">
+                <div className="space-y-4">
                   {/* WhatsApp */}
-                  <Card className="group transition-all duration-300" data-testid="contact-whatsapp">
-                    <CardContent className="p-6">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg">
-                          <FaWhatsapp className="text-white h-7 w-7" />
-                        </div>
-                        <div className="flex-1">
-                          <a
-                            href={whatsappLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-green-600 hover:text-vibrant-turquoise font-semibold text-lg transition-colors"
-                            data-testid="link-whatsapp"
-                          >
-                            WhatsApp
-                          </a>
-                          <p className="text-muted-foreground text-sm mt-1">
-                            Atendimento rápido e direto
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div className="flex items-center space-x-3" data-testid="contact-whatsapp">
+                    <FaWhatsapp className="text-green-600 h-5 w-5" />
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors"
+                      data-testid="link-whatsapp"
+                    >
+                      WhatsApp
+                    </a>
+                  </div>
 
                   {/* Instagram */}
-                  <Card className="group transition-all duration-300" data-testid="contact-instagram">
-                    <CardContent className="p-6">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-14 h-14 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg">
-                          <FaInstagram className="text-white h-7 w-7" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-bold text-dark-teal text-lg mb-1">Instagram</h3>
-                          <a
-                            href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-vibrant-turquoise font-semibold text-lg transition-colors"
-                            data-testid="link-instagram"
-                          >
-                            Instagram
-                          </a>
-                          <p className="text-muted-foreground text-sm mt-1">
-                            Dicas e informações sobre saúde
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div className="flex items-center space-x-3" data-testid="contact-instagram">
+                    <FaInstagram className="text-purple-600 h-5 w-5" />
+                    <a
+                      href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors"
+                      data-testid="link-instagram"
+                    >
+                      Instagram
+                    </a>
+                  </div>
 
                   {/* Address */}
-                  <Card className="group hover:shadow-md transition-all duration-300" data-testid="contact-address">
-                    <CardContent className="p-6">
-                      <div className="flex items-start space-x-4">
-                        <div className="w-14 h-14 bg-vibrant-turquoise rounded-2xl flex items-center justify-center shadow-lg">
-                          <MapPin className="text-white h-7 w-7" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-bold text-dark-teal text-lg mb-1">Endereço</h3>
-                          <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-vibrant-turquoise transition-colors block">
-                            <p className="font-medium">Centro Médico Hospital Otorrino</p>
-                            <p>R. Ten. Eulálio Guerra, 50</p>
-                            <p>Araes, Cuiabá - MT, 78005-510</p>
-                          </a>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-
-                  {/* Email */}
-                  <Card className="group hover:shadow-md transition-all duration-300" data-testid="contact-email">
-                    <CardContent className="p-6">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-14 h-14 bg-soft-blue-green rounded-2xl flex items-center justify-center shadow-lg">
-                          <Mail className="text-white h-7 w-7" />
-                        </div>
-                        <div className="flex-1">
-                          <h3 className="font-bold text-dark-teal text-lg mb-1">Email</h3>
-                          <a
-                            href="mailto:contato@drmarioesposito.com.br"
-                            className="text-soft-blue-green hover:text-vibrant-turquoise font-semibold text-lg transition-colors"
-                            data-testid="link-email"
-                          >
-                            contato@drmarioesposito.com.br
-                          </a>
-                          <p className="text-muted-foreground text-sm mt-1">
-                            Para dúvidas e informações gerais
-                          </p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <div className="flex items-start space-x-3" data-testid="contact-address">
+                    <MapPin className="text-vibrant-turquoise h-5 w-5 mt-0.5" />
+                    <div>
+                      <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-vibrant-turquoise transition-colors">
+                        <p>Centro Médico Hospital Otorrino</p>
+                        <p>R. Ten. Eulálio Guerra, 50</p>
+                        <p>Araes, Cuiabá - MT, 78005-510</p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
 
