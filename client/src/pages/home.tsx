@@ -481,21 +481,18 @@ const Home = () => {
                     <div className="space-y-4">
                       <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-weekday">
                         <div className="flex items-center space-x-3">
-                          <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                           <span className="font-semibold text-dark-teal">Segunda à Sexta</span>
                         </div>
                         <span className="text-vibrant-turquoise font-medium">08:00 - 18:00</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-100" data-testid="hours-saturday">
                         <div className="flex items-center space-x-3">
-                          <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                           <span className="font-semibold text-dark-teal">Sábado</span>
                         </div>
                         <span className="text-vibrant-turquoise font-medium">08:00 - 12:00</span>
                       </div>
                       <div className="flex justify-between items-center py-2" data-testid="hours-sunday">
                         <div className="flex items-center space-x-3">
-                          <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                           <span className="font-semibold text-dark-teal">Domingo</span>
                         </div>
                         <span className="text-muted-foreground font-medium">Fechado</span>
