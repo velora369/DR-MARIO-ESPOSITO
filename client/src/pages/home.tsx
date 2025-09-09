@@ -102,7 +102,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Specialties Preview */}
       <section className="py-20 bg-bluish-white smooth-section animate-fade-in" data-testid="section-specialties">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -151,7 +150,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Why Choose Dr. Mario */}
       <section className="py-20" data-testid="section-why-choose">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -217,7 +215,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Featured Procedures */}
       <section className="py-20 bg-muted" data-testid="section-procedures">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -256,7 +253,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* FAQ Preview */}
       <section className="py-20 bg-bluish-white" data-testid="section-faq-preview">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -294,7 +290,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section className="py-20 bg-muted" data-testid="section-contact">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -320,7 +315,7 @@ const Home = () => {
                     href={whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer"
+                    className="flex items-center space-x-4 hover:bg-gray-50 p-2 rounded-lg transition-colors cursor-pointer bg-[#2b2c3700]"
                     data-testid="contact-whatsapp"
                   >
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
@@ -421,7 +416,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* Scroll to Top Button */}
       {showScrollTop && (
         <Button
