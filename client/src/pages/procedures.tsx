@@ -118,8 +118,8 @@ const Procedures = () => {
           <div className="text-center mt-16">
             <Link href="/">
               <Button
-                size="lg"
-                className="bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg hover:bg-accent flex items-center space-x-2 mx-auto"
+                variant="ghost"
+                className="flex items-center space-x-2 text-muted-foreground hover:text-vibrant-turquoise transition-colors mx-auto"
                 data-testid="button-back-bottom"
               >
                 <ArrowLeft className="h-5 w-5" />
