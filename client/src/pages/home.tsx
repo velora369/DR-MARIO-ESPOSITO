@@ -503,23 +503,6 @@ const Home = () => {
                 </Card>
               </div>
 
-              {/* Quick Contact */}
-              <div className="bg-light-blue-pastel/20 p-6 rounded-2xl" data-testid="quick-contact">
-                <h3 className="text-xl font-bold text-dark-teal mb-4">Agendamento Rápido</h3>
-                <p className="text-muted-foreground mb-4">
-                  Para maior agilidade, entre em contato pelo WhatsApp com uma mensagem pré-definida:
-                </p>
-                <a
-                  href={whatsappScheduleLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="whatsapp-btn text-white px-6 py-3 rounded-xl font-semibold inline-flex items-center"
-                  data-testid="button-quick-whatsapp"
-                >
-                  <FaWhatsapp className="mr-3 h-5 w-5" />
-                  Agendar via WhatsApp
-                </a>
-              </div>
             </div>
 
             {/* Map Section */}
