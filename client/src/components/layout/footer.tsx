@@ -144,13 +144,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="mt-4 pt-4 border-t border-dark-graphite-gray">
-            <p className="text-light-bluish-gray text-xs text-center flex items-center justify-center" data-testid="text-disclaimer">
-              <Info className="w-4 h-4 mr-2" />
-              Este conteúdo é meramente informativo e não substitui uma consulta médica. 
-              Consulte sempre um profissional de saúde qualificado para diagnóstico e tratamento adequados.
-            </p>
-          </div>
+          
         </div>
       </div>
     </footer>
