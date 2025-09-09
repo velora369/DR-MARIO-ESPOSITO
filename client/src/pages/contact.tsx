@@ -104,17 +104,26 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
                   Informações de Contato
                 </h2>
-                <div className="space-y-4">
+                <div className="space-y-6">
                   {/* WhatsApp */}
                   <div data-testid="contact-whatsapp">
                     <a
                       href={whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors block"
+                      className="flex items-center p-3 sm:p-4 bg-gradient-to-r from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 rounded-xl transition-all duration-300 group border border-green-200 hover:border-green-300 hover:shadow-md"
                       data-testid="link-whatsapp"
                     >
-                      WhatsApp
+                      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-green-500 hover:bg-green-600 rounded-full transition-colors duration-300 flex-shrink-0">
+                        <FaWhatsapp className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                      </div>
+                      <div className="ml-3 sm:ml-4 flex-1">
+                        <h3 className="font-semibold text-dark-teal text-base sm:text-lg group-hover:text-green-700 transition-colors">WhatsApp</h3>
+                        <p className="text-muted-foreground text-xs sm:text-sm">Clique para conversar no WhatsApp</p>
+                      </div>
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block">
+                        <div className="w-6 h-6 text-green-600">→</div>
+                      </div>
                     </a>
                   </div>
 
@@ -124,20 +133,44 @@ const Contact = () => {
                       href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors block"
+                      className="flex items-center p-3 sm:p-4 bg-gradient-to-r from-pink-50 to-purple-50 hover:from-pink-100 hover:to-purple-100 rounded-xl transition-all duration-300 group border border-pink-200 hover:border-pink-300 hover:shadow-md"
                       data-testid="link-instagram"
                     >
-                      Instagram
+                      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 rounded-full transition-all duration-300 flex-shrink-0">
+                        <FaInstagram className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                      </div>
+                      <div className="ml-3 sm:ml-4 flex-1">
+                        <h3 className="font-semibold text-dark-teal text-base sm:text-lg group-hover:text-pink-700 transition-colors">Instagram</h3>
+                        <p className="text-muted-foreground text-xs sm:text-sm">@dr_marioesposito</p>
+                      </div>
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block">
+                        <div className="w-6 h-6 text-pink-600">→</div>
+                      </div>
                     </a>
                   </div>
 
                   {/* Address */}
                   <div data-testid="contact-address">
-                    <h3 className="font-medium text-gray-800 mb-1">Endereço</h3>
-                    <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-vibrant-turquoise transition-colors block">
-                      <p>Centro Médico Hospital Otorrino</p>
-                      <p>R. Ten. Eulálio Guerra, 50</p>
-                      <p>Araes, Cuiabá - MT, 78005-510</p>
+                    <a 
+                      href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="flex items-center p-3 sm:p-4 bg-gradient-to-r from-blue-50 to-cyan-50 hover:from-blue-100 hover:to-cyan-100 rounded-xl transition-all duration-300 group border border-blue-200 hover:border-blue-300 hover:shadow-md"
+                    >
+                      <div className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-vibrant-turquoise hover:bg-soft-blue-green rounded-full transition-colors duration-300 flex-shrink-0">
+                        <MapPin className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+                      </div>
+                      <div className="ml-3 sm:ml-4 flex-1">
+                        <h3 className="font-semibold text-dark-teal text-base sm:text-lg group-hover:text-blue-700 transition-colors mb-1">Endereço</h3>
+                        <div className="text-muted-foreground text-xs sm:text-sm space-y-1">
+                          <p>Centro Médico Hospital Otorrino</p>
+                          <p>R. Ten. Eulálio Guerra, 50</p>
+                          <p>Araes, Cuiabá - MT, 78005-510</p>
+                        </div>
+                      </div>
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block">
+                        <div className="w-6 h-6 text-blue-600">→</div>
+                      </div>
                     </a>
                   </div>
                 </div>
