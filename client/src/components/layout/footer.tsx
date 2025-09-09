@@ -61,13 +61,18 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/faq" 
-                  className="text-light-bluish-gray hover:text-vibrant-turquoise transition-colors"
+                <button 
+                  onClick={() => {
+                    const element = document.getElementById("faq");
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="text-light-bluish-gray hover:text-vibrant-turquoise transition-colors text-left"
                   data-testid="link-footer-faq"
                 >
                   FAQ
-                </Link>
+                </button>
               </li>
               <li>
                 <button 

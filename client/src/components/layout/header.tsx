@@ -59,7 +59,7 @@ const Header = () => {
     { name: "Sobre", href: "/sobre", action: null },
     { name: "Especialidades", href: "/especialidades", action: null },
     { name: "Procedimentos", href: "/procedimentos", action: null },
-    { name: "FAQ", href: "/faq", action: null },
+    { name: "FAQ", href: "#", action: () => scrollToSection("faq") },
     { name: "Contato", href: "#", action: () => scrollToSection("contato") },
   ];
 

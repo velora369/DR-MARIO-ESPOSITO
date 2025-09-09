@@ -9,7 +9,6 @@ import Home from "@/pages/home";
 import About from "@/pages/about";
 import Specialties from "@/pages/specialties";
 import Procedures from "@/pages/procedures";
-import FAQ from "@/pages/faq";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,7 +21,6 @@ function Router() {
           <Route path="/sobre" component={About} />
           <Route path="/especialidades" component={Specialties} />
           <Route path="/procedimentos" component={Procedures} />
-          <Route path="/faq" component={FAQ} />
           <Route component={NotFound} />
         </Switch>
       </main>
