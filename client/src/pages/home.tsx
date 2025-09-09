@@ -495,11 +495,7 @@ const Home = () => {
                         </div>
                         <span className="text-muted-foreground font-medium">Fechado</span>
                       </div>
-                      <div className="mt-6 pt-4 border-t border-vibrant-turquoise/20 bg-light-blue-pastel/30 rounded-xl p-4">
-                        <p className="text-sm text-dark-teal font-medium text-center" data-testid="hours-note">
-                          Atendimento mediante agendamento prévio
-                        </p>
-                      </div>
+                      
                     </div>
                   </CardContent>
                 </Card>
