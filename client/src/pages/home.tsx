@@ -460,7 +460,7 @@ const Home = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-dark-teal">Endereço</h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-[#14313e]">
                     Centro Médico Hospital Otorrino<br />
                     R. Ten. Eulálio Guerra, 50<br />
                     Araes, Cuiabá - MT, 78005-510
