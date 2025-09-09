@@ -104,15 +104,17 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-dark-teal mb-6" data-testid="title-contact-info">
                   Informações de Contato
                 </h2>
-                <div className="space-y-4">
+                <div className="space-y-6">
                   {/* WhatsApp */}
-                  <div className="flex items-center space-x-3" data-testid="contact-whatsapp">
-                    <FaWhatsapp className="text-green-600 h-5 w-5" />
+                  <div className="flex items-center space-x-4" data-testid="contact-whatsapp">
+                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                      <FaWhatsapp className="text-white h-6 w-6" />
+                    </div>
                     <a
                       href={whatsappLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors"
+                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors font-medium"
                       data-testid="link-whatsapp"
                     >
                       WhatsApp
@@ -120,13 +122,15 @@ const Contact = () => {
                   </div>
 
                   {/* Instagram */}
-                  <div className="flex items-center space-x-3" data-testid="contact-instagram">
-                    <FaInstagram className="text-purple-600 h-5 w-5" />
+                  <div className="flex items-center space-x-4" data-testid="contact-instagram">
+                    <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                      <FaInstagram className="text-white h-6 w-6" />
+                    </div>
                     <a
                       href="https://www.instagram.com/dr_marioesposito?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors"
+                      className="text-gray-700 hover:text-vibrant-turquoise transition-colors font-medium"
                       data-testid="link-instagram"
                     >
                       Instagram
@@ -134,10 +138,13 @@ const Contact = () => {
                   </div>
 
                   {/* Address */}
-                  <div className="flex items-start space-x-3" data-testid="contact-address">
-                    <MapPin className="text-vibrant-turquoise h-5 w-5 mt-0.5" />
+                  <div className="flex items-start space-x-4" data-testid="contact-address">
+                    <div className="w-12 h-12 bg-vibrant-turquoise rounded-full flex items-center justify-center mt-1">
+                      <MapPin className="text-white h-6 w-6" />
+                    </div>
                     <div>
-                      <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-vibrant-turquoise transition-colors">
+                      <h3 className="font-semibold text-gray-800 mb-1">Endereço</h3>
+                      <a href="https://maps.app.goo.gl/9Hx8eapad4FhjnWN9" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-vibrant-turquoise transition-colors">
                         <p>Centro Médico Hospital Otorrino</p>
                         <p>R. Ten. Eulálio Guerra, 50</p>
                         <p>Araes, Cuiabá - MT, 78005-510</p>
