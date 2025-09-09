@@ -61,22 +61,24 @@ const Header = () => {
   return (
     <nav className="fixed w-full top-0 z-50 transition-all duration-300 bg-white border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center" data-testid="link-home">
-            <div 
-              className={`text-2xl font-bold transition-all duration-300 ease-in-out ${
-                showDoctorName ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-2'
-              }`}
-            >
-              <span className="text-dark-teal">Dr.</span>
-              <span className="text-vibrant-turquoise ml-1">
-                Mário Espósito
-              </span>
-            </div>
-          </Link>
+        <div className="relative flex items-center justify-center h-16">
+          {/* Logo - posicionado à esquerda */}
+          <div className="absolute left-0">
+            <Link href="/" className="flex items-center" data-testid="link-home">
+              <div 
+                className={`text-2xl font-bold transition-all duration-300 ease-in-out ${
+                  showDoctorName ? 'opacity-100 transform translate-x-0' : 'opacity-0 transform -translate-x-2'
+                }`}
+              >
+                <span className="text-dark-teal">Dr.</span>
+                <span className="text-vibrant-turquoise ml-1">
+                  Mário Espósito
+                </span>
+              </div>
+            </Link>
+          </div>
 
-          {/* Desktop Navigation Menu */}
+          {/* Desktop Navigation Menu - centralizado */}
           <div className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link
@@ -94,8 +96,8 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Hamburger menu - visível apenas em mobile */}
-          <div className="lg:hidden">
+          {/* Hamburger menu - posicionado à direita em mobile */}
+          <div className="absolute right-0 lg:hidden">
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="sm" data-testid="button-hamburger-menu">
