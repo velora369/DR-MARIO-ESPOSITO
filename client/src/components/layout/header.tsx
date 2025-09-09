@@ -39,9 +39,6 @@ const Header = () => {
               <span className="text-dark-teal">Dr.</span>
               <span className="text-vibrant-turquoise ml-1">Mário Espósito</span>
             </div>
-            <div className="ml-2 text-sm text-dark-graphite-gray">
-              CRM-MT 2338
-            </div>
           </Link>
 
           {/* Hamburger menu - sempre visível */}
