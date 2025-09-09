@@ -151,7 +151,7 @@ const Home = () => {
         </div>
       </section>
       {/* Why Choose Dr. Mario */}
-      <section className="py-20" data-testid="section-why-choose">
+      <section id="section-why-choose" className="py-20" data-testid="section-why-choose">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>

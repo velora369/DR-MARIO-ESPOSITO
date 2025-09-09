@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
-import { GraduationCap, Hospital, Award } from "lucide-react";
+import { GraduationCap, Hospital, Award, ArrowLeft } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
@@ -33,10 +33,26 @@ const About = () => {
     "Membro Titular da Academia Brasileira de Cirurgia Plástica da Face"
   ];
 
+  const handleGoBack = () => {
+    window.location.href = "/#section-why-choose";
+  };
+
   return (
     <div>
       <section className="py-20" data-testid="section-about">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Botão Voltar */}
+          <div className="mb-8">
+            <Button
+              onClick={handleGoBack}
+              variant="ghost"
+              className="flex items-center space-x-2 text-muted-foreground hover:text-vibrant-turquoise transition-colors"
+              data-testid="button-back"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              <span>Voltar</span>
+            </Button>
+          </div>
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div>
               <img
