@@ -282,11 +282,11 @@ const Home = () => {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg w-full min-h-[60px] flex items-center justify-center"
+                className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg w-full min-h-[60px] flex items-center justify-center whitespace-nowrap"
                 data-testid="button-faq-whatsapp"
               >
-                <FaWhatsapp className="mr-3 h-5 w-5" />
-                Tirar dúvidas no WhatsApp
+                <FaWhatsapp className="mr-3 h-5 w-5 flex-shrink-0" />
+                <span className="whitespace-nowrap">Tirar dúvidas no WhatsApp</span>
               </a>
             </div>
           </div>
