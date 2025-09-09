@@ -142,9 +142,7 @@ const Footer = () => {
 
         <div className="border-t border-dark-graphite-gray mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-light-bluish-gray text-sm mb-4 md:mb-0" data-testid="text-copyright">
-              © 2024 Dr. Mário Espósito - CRM-MT 2338. Todos os direitos reservados.
-            </p>
+            <p className="text-light-bluish-gray text-sm mb-4 md:mb-0" data-testid="text-copyright">© 2025 Dr. Mário Espósito - CRM-MT 2338. Todos os direitos reservados.</p>
             <div className="flex space-x-6">
               <a href="#" className="text-light-bluish-gray hover:text-vibrant-turquoise text-sm">
                 Política de Privacidade
