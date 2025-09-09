@@ -277,16 +277,18 @@ const Home = () => {
                 Ver todas as perguntas
               </Button>
             </Link>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg flex-1 max-w-xs w-full min-h-[60px] flex items-center justify-center"
-              data-testid="button-faq-whatsapp"
-            >
-              <FaWhatsapp className="mr-3 h-5 w-5" />
-              Tirar dúvidas no WhatsApp
-            </a>
+            <div className="flex-1 max-w-xs">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="whatsapp-btn text-white px-8 py-4 rounded-xl font-semibold text-lg w-full min-h-[60px] flex items-center justify-center"
+                data-testid="button-faq-whatsapp"
+              >
+                <FaWhatsapp className="mr-3 h-5 w-5" />
+                Tirar dúvidas no WhatsApp
+              </a>
+            </div>
           </div>
         </div>
       </section>
